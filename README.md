@@ -1,6 +1,6 @@
 # pndc-homegrown-initiative
 
-<h1 align="center">Penn-Northwest Homegrown Initiative Project Website</h1>
+<h1 align="center">Penn-Northwest Homegrown Initiative</h1>
 
 <p align="center">
   <a href="https://materializecss.github.io/materialize/">
@@ -8,10 +8,10 @@
   </a>
 </p>
 
-<h3 align="center">MaterializeCSS</h3>
+<h3 align="center">PNDC Home Grown</h3>
 
 <p align="center">
-  Materialize, a CSS Framework based on material design.
+  Built with the Materialize CSS Framework - An Open Source Framework Maintained and Developed by the GitHub Community.
   <br>
   <a href="https://materializecss.github.io/materialize/"><strong>-- Browse the docs --</strong></a>
   <br>
