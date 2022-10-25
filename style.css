@@ -1,0 +1,27 @@
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background: url(./img/landing_placeholder.jpg) no-repeat center center fixed;
+  margin: 0 auto;
+  height: 92vh;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+main {
+  height: 50rem;
+}
+/* div {
+  background: white;
+  width: 100%;
+  height: 40rem;
+} */
