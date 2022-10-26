@@ -12,6 +12,30 @@ html {
   top: 0;
 } */
 
+.nav-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.nav-item:nth-of-type(2) {
+  border-left: none;
+}
+.nav-item:nth-of-type(3) {
+  border-left: none;
+}
+.nav-item:nth-of-type(4) {
+  border-left: none;
+}
+.nav-item:nth-of-type(5) {
+  border-left: none;
+}
+
+.navbar-collapse.show,
+.collapsing {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 2px 2px 15px 15px;
+}
+
 header {
   background: url(./img/landing_placeholder.jpg) no-repeat center center fixed;
   margin: 0 auto;
