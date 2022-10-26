@@ -2,10 +2,20 @@ html {
   scroll-behavior: smooth;
 }
 
+body,
+html {
+  font-family: 'Open Sans', Helvetica, Arial, Helmet, Freesans, sans-serif;
+}
+
+/* nav {
+  position: fixed;
+  top: 0;
+} */
+
 header {
   background: url(./img/landing_placeholder.jpg) no-repeat center center fixed;
   margin: 0 auto;
-  height: 92vh;
+  height: 96vh;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -13,8 +23,17 @@ header {
   background-size: cover;
 }
 
-h1 {
-  margin: 0 auto;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.landing-intro {
+  /* margin: 0; */
+  animation: 1s ease-in 0s 1 fadeIn;
 }
 
 main {
