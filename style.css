@@ -4,7 +4,8 @@ html {
 
 body,
 html {
-  font-family: 'Open Sans', Helvetica, Arial, Helmet, Freesans, sans-serif;
+  /* font-family: 'Open Sans', Helvetica, Arial, Helmet, Freesans, sans-serif; */
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* nav {
@@ -12,10 +13,26 @@ html {
   top: 0;
 } */
 
+.light-orange {
+  /* background-color: rgba(255, 166, 48, 0.7); */
+}
+
 .nav-item {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.nav-item a:hover {
+  position: relative;
+  top: 0.1rem;
+}
+.nav-item a:active {
+  position: relative;
+  top: 0.2rem;
+}
+.nav-link:hover {
+  position: relative;
+  top: 5rem;
 }
 .nav-item:nth-of-type(2) {
   border-left: none;
