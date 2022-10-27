@@ -67,10 +67,33 @@ header {
     opacity: 1;
   }
 }
+
+#header-div {
+  position: relative;
+  bottom: 5rem;
+}
+
+/* Header Message */
 .landing-intro {
   /* margin: 0; */
   animation: 1s ease-in 0s 1 fadeIn;
+  background-color: rgba(0, 167, 225, 0.5);
+  background-color: #0d1b2a;
+  background-color: rgba(13, 27, 42, 0.85);
+
+  /* box-shadow: 1px 3px 72px 11px rgba(0, 0, 0, 0.69); */
+  /* border-radius: 25px; */
+  max-width: 80%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  /* padding-right: 2rem; */
 }
+/* 
+#tour-btn {
+  background-color: ;
+} */
 
 main {
   height: 50rem;
