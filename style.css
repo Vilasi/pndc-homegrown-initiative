@@ -84,12 +84,24 @@ header {
   /* box-shadow: 1px 3px 72px 11px rgba(0, 0, 0, 0.69); */
   /* border-radius: 25px; */
   max-width: 80%;
+
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
   /* padding-right: 2rem; */
 }
+
+#tour-btn-div {
+  justify-self: flex-end !important;
+  align-self: flex-end;
+}
+
+#tour-btn-arrow {
+  position: relative;
+  top: 0.3rem;
+}
+
 /* 
 #tour-btn {
   background-color: ;

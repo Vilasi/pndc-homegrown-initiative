@@ -33,6 +33,7 @@
 
     <!-- css.gg -->
     <link href="https://css.gg/css" rel="stylesheet" />
+    <link href="https://css.gg/arrow-down.css" rel="stylesheet" />
   </head>
   <body>
     <!-- <nav
@@ -142,8 +143,11 @@
         </div>
       </div>
     </nav>
-    <header class="d-flex shadow-lg">
-      <div id="header-div" class="container align-self-center">
+    <header class="d-flex flex-column justify-content-center shadow-lg">
+      <div
+        id="header-div"
+        class="container align-self-center d-flex justify-content-center"
+      >
         <h1
           class="display-1 text-light typewrite landing-intro text-center rounded shadow-l"
           data-period="2000"
@@ -152,9 +156,16 @@
           Welcome to Mercer County
         </h1>
       </div>
-      <!-- <a id="tour-btn" class="btn btn-primary btn-lg" href="#" role="button"
-        >Take The Tour</a
-      > -->
+      <div id="tour-btn-div" class="container d-flex justify-content-center">
+        <a
+          id="tour-btn"
+          class="btn btn-primary btn-lg d-inline-block"
+          href="#"
+          role="button"
+          >Take The Tour
+          <i id="tour-btn-arrow" class="gg-arrow-down d-inline-block"></i
+        ></a>
+      </div>
       <!-- <div class="container d-block"></div> -->
     </header>
 
