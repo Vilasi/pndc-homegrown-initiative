@@ -6,6 +6,9 @@ body,
 html {
   font-family: 'Quicksand', sans-serif;
 }
+nav {
+  animation: 1s ease-in 0s 1 fadeIn;
+}
 
 .nav-item {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -89,6 +92,7 @@ header {
 #tour-btn-div {
   justify-self: flex-end !important;
   align-self: flex-end;
+  animation: 1s ease-in 0s 1 fadeIn;
 }
 
 #tour-btn-arrow {
