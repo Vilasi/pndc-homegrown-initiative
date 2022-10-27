@@ -7,11 +7,6 @@ html {
   font-family: 'Quicksand', sans-serif;
 }
 
-/* nav {
-  position: fixed;
-  top: 0;
-} */
-
 .nav-item {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-left: 1rem;
@@ -52,7 +47,6 @@ header {
   background: url(./img/landing_placeholder.jpg) no-repeat center center fixed;
   margin: 0 auto;
   height: 96vh;
-
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
