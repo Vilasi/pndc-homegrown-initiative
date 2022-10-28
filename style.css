@@ -40,7 +40,6 @@ nav {
 .nav-item:nth-of-type(5) {
   border-left: none;
 }
-
 .navbar-collapse.show,
 .collapsing {
   background-color: rgba(255, 255, 255, 0.8);
@@ -65,95 +64,53 @@ header {
     opacity: 1;
   }
 }
-
 #header-div {
   position: relative;
   bottom: 5rem;
 }
-
-/* Header Message */
 .landing-intro {
-  /* margin: 0; */
   animation: 1s ease-in 0s 1 fadeIn;
   background-color: rgba(0, 167, 225, 0.5);
   background-color: #0d1b2a;
   background-color: rgba(13, 27, 42, 0.85);
-
-  /* box-shadow: 1px 3px 72px 11px rgba(0, 0, 0, 0.69); */
-  /* border-radius: 25px; */
-  /* max-width: 80%; */
-
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
-  /* padding-right: 2rem; */
 }
-
 #tour-btn-div {
   justify-self: flex-end !important;
   align-self: flex-end;
   animation: 1s ease-in 0s 1 fadeIn;
 }
-
 #tour-btn-arrow {
   position: relative;
   top: 0.3rem;
 }
-
-/* 
-#tour-btn {
-  background-color: ;
-} */
-
 main {
   height: 50rem;
 }
-/* div {
-  background: white;
-  width: 100%;
-  height: 40rem;
-} */
-
 section:nth-of-type(1) {
-  background: url(./img/windy_road.jpg) no-repeat 15% 25% fixed;
+  background: url(./img/courthouse.jpg) no-repeat,
+    linear-gradient(
+      180deg,
+      rgba(190, 223, 255, 1) 0%,
+      rgba(202, 232, 255, 0.8) 25%,
+      rgba(243, 253, 254, 0.3) 70%
+    );
   height: 96vh;
-}
-
-.transform-45 {
-  transform: skew(45);
-}
-
-#amenities-section {
   display: flex;
   justify-content: end;
-  /* overflow: hidden; */
 }
-
-/* ORIGINAL DIAGONAL SKEW */
-/* #amenities-diagonal {
-  max-width: 55%;
-  margin: 0;
-  height: 100%;
-  position: relative;
-  left: 5rem;
-  transform: skewX(-10deg);
-}
-
-#amenities {
- 
-  transform: skewY(10deg);
- 
-} */
 .diagonal-box {
-  /* background-image: linear-gradient(45deg, #6303b1, #ff0099); */
   transform: skew(-20deg);
   width: 70%;
   position: relative;
   left: 11rem;
 }
-
 .content {
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,6 +118,98 @@ section:nth-of-type(1) {
   height: 100%;
   margin: 0 auto;
   position: relative;
-
   transform: skew(20deg);
 }
+
+@media only screen and (max-width: 1200px) {
+  section:nth-of-type(1) {
+    background: #f8f9fa;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .diagonal-box {
+    transform: skew(0deg);
+    width: 100%;
+    position: relative;
+    left: 0rem;
+  }
+  .content {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    transform: skew(0deg);
+  }
+  #mobile-picture-1 {
+    background: url(./img/courthouse.jpg) no-repeat,
+      linear-gradient(
+        180deg,
+        rgba(190, 223, 255, 1) 0%,
+        rgba(202, 232, 255, 0.8) 25%,
+        rgba(243, 253, 254, 0.3) 70%
+      );
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 96vh;
+
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 624px) {
+  #amenities-content .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.content div {
+  max-width: 63%;
+}
+
+/********************** FANCY BUTTON EFFECT **********************/
+.flash-slide {
+  border: medium none;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  /* margin: 20px; */
+  /* width: 180px; */
+  /* height: 50px; */
+  /* border-radius: 10px; */
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  /* font-family: Helvetica; */
+  text-align: center;
+}
+
+.flash-slide::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: -80px;
+  height: 100px;
+  width: 70px;
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotate(20deg);
+}
+
+.flash-slide:hover::before {
+  left: 190px;
+  transition: all 0.5s ease 0s;
+}
+
+.flash-slide--blue {
+  background: rgb(61, 135, 255);
+}
+/********************** FANCY BUTTON EFFECT **********************/
