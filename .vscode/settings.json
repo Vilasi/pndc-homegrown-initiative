@@ -1,3 +1,28 @@
+// REMOVE BEFORE PROD
 {
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "cSpell.ignoreWords": [
+    "Eius",
+    "Obcaecati",
+    "accusantium",
+    "adipisicing",
+    "amet",
+    "consectetur",
+    "consequatur",
+    "delectus",
+    "deskewed",
+    "dolorum",
+    "elit",
+    "ipsam",
+    "iste",
+    "magnam",
+    "molestiae",
+    "nulla",
+    "odit",
+    "perspiciatis",
+    "saepe",
+    "suscipit",
+    "unde",
+    "veritatis"
+  ]
 }

@@ -49,6 +49,8 @@ nav {
 header {
   background: url(./img/reservoir.jpeg) no-repeat center center fixed;
   background: url(./img/landing_placeholder.jpg) no-repeat center center fixed;
+  /* background: url(./img/buhl_kite_field.png) no-repeat center -190px fixed; */
+  /* background: url(./img/buhl_activities_building.png) no-repeat center -190px fixed; */
   margin: 0 auto;
   height: 96vh;
   -webkit-background-size: cover;
@@ -98,15 +100,6 @@ header {
   top: 0.3rem;
 }
 
-#tour-btn {
-  /* backdrop-filter: blur(10px); */
-  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif; */
-  font-family: Arial, Helvetica, sans-serif;
-}
-main {
-  height: 50rem;
-}
 section:nth-of-type(1) {
   background: url(./img/courthouse.jpg) no-repeat,
     linear-gradient(
@@ -119,14 +112,14 @@ section:nth-of-type(1) {
   display: flex;
   justify-content: end;
 }
-.diagonal-box {
+.diagonal-box-1 {
   transform: skew(-20deg);
   width: 70%;
   position: relative;
   left: 11rem;
 }
-.content {
-  position: relative;
+.deskewed-box-work-section {
+  /* position: relative; */
 
   display: flex;
   justify-content: center;
@@ -138,6 +131,15 @@ section:nth-of-type(1) {
   transform: skew(20deg);
 }
 
+.deskewed-box-work-section div {
+  max-width: 63%;
+}
+
+#work-button i {
+  position: relative;
+  top: 0.35rem;
+}
+
 @media only screen and (max-width: 1200px) {
   section:nth-of-type(1) {
     background: #f8f9fa;
@@ -147,13 +149,13 @@ section:nth-of-type(1) {
     justify-content: center;
     align-items: center;
   }
-  .diagonal-box {
+  .diagonal-box-1 {
     transform: skew(0deg);
     width: 100%;
     position: relative;
     left: 0rem;
   }
-  .content {
+  .deskewed-box-work-section {
     position: relative;
 
     display: flex;
@@ -183,14 +185,10 @@ section:nth-of-type(1) {
 }
 
 @media only screen and (max-width: 624px) {
-  #amenities-content .container {
+  #work-content-mobile .container {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-}
-
-.content div {
-  max-width: 63%;
 }
 
 /********************** FANCY BUTTON EFFECT **********************/
@@ -233,10 +231,11 @@ section:nth-of-type(1) {
 
 /************************* HOVER COLOR BUTTON *************************/
 .btn-background-slide {
-  width: 180px;
+  width: 12.5rem;
   /* padding: 6px; */
   height: 50px;
-  color: rgb(51, 51, 51);
+  background-color: #0d6efd;
+  color: #f8f9fa;
   text-align: center;
   /* position: absolute; */
   /* top: 50%; */
@@ -251,7 +250,7 @@ section:nth-of-type(1) {
 }
 
 .btn-background-slide:hover {
-  box-shadow: #0d1b2a 8px 8px 0px, #f06543 -8px -8px 0px;
+  box-shadow: #246eb9 8px 8px 0px, #f06543 -8px -8px 0px;
   border-bottom: 1px solid #0d1b2a;
   border-right: 1px solid #0d1b2a49;
 }
