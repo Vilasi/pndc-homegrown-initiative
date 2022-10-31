@@ -29,9 +29,11 @@
     <link href="https://css.gg/arrow-down.css" rel="stylesheet" />
     <link href="https://css.gg/arrow-right.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="bg-light">
     <!------------------------------------------------------ START NAV ------------------------------------------------------>
-    <nav class="navbar navbar-expand-lg fixed-top fs-5 bg-light shadow">
+    <nav
+      class="navbar navbar-expand-lg fixed-top fs-5 bg-light shadow scrollIn"
+    >
       <div class="container-fluid">
         <a class="navbar-brand fs-3 d-none d-lg-block" href="./index.html">
           <img
@@ -158,13 +160,13 @@
     </header>
 
     <main>
-      <section class="container-fluid px-0" id="work-section">
+      <section class="container-fluid px-0 scrollIn" id="work-section">
         <div class="diagonal-box-1 bg-light">
           <div id="work-content-mobile" class="deskewed-box-work-section">
             <!-- Move the below div's position around to shift diagonal page content -->
             <!-- XL -->
             <!-- <div class="container d-none d-xl-block"></div> -->
-            <div class="container">
+            <div class="container scrollIn">
               <h2 class="display-1">Looking For Work?</h2>
               <p class="lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
@@ -198,9 +200,55 @@
         </div>
       </section>
       <div id="mobile-picture-1" class="container"></div>
+
+      <!-- SECTION 2 -->
+      <section class="container-fluid px-0 scrollIn" id="amenities-section">
+        <div class="diagonal-box-2 bg-light">
+          <div
+            id="amenities-content-mobile"
+            class="deskewed-box-amenities-section"
+          >
+            <!-- Move the below div's position a
+              round to shift diagonal page content -->
+            <!-- XL -->
+            <!-- <div class="container d-none d-xl-block"></div> -->
+            <div class="container">
+              <h2 class="display-1">Amenities</h2>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                odit suscipit perspiciatis? Obcaecati molestiae in, magnam unde
+                veritatis consectetur fugit dolorum, saepe ipsam iste
+                accusantium delectus error consequatur nulla et.
+              </p>
+              <div>
+                <h3 class="display-4">Events</h3>
+                <!-- <button type="button" class="btn btn-secondary">
+                  Secondary
+                </button> -->
+              </div>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                odit suscipit perspiciatis? Obcaecati molestiae in, magnam unde
+                veritatis consectetur fugit dolorum, saepe ipsam iste
+                accusantium delectus error consequatur nulla et.
+              </p>
+              <div>
+                <button id="amenities-button" class="btn btn-background-slide">
+                  Click To Learn More
+                  <i class="gg-arrow-right d-inline-block"></i>
+                  <div
+                    class="text-light btn-background-slide--blue btn-background-slide-bg"
+                  ></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="mobile-picture-1" class="container"></div>
     </main>
 
     <script src="./js/bootstrap.bundle.js" async defer></script>
-    <script src="./app.js" async defer></script>
+    <script src="./app.js" defer></script>
   </body>
 </html>
