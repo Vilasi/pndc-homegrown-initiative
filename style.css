@@ -98,7 +98,8 @@ header {
 
 /****************************** SECTION 1 (AMENITIES) ******************************/
 section:nth-of-type(1) {
-  /* margin-top: 20rem; */
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   background: url(./img/courthouse.jpg) no-repeat,
     linear-gradient(
       180deg,
@@ -145,7 +146,7 @@ section:nth-of-type(1) {
 /****************************** SECTION 2 (AMENITIES) ******************************/
 
 section:nth-of-type(2) {
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   background: url(./img/buhl_julia_bridge.png) no-repeat right;
 
   height: 96vh;
@@ -186,12 +187,55 @@ section:nth-of-type(2) {
   top: 0.35rem;
 }
 /****************************************************************************************/
+/****************************** SECTION 3 (LIVE) ******************************/
+section:nth-of-type(3) {
+  /* margin-top: 20rem; */
+  margin-top: 6rem;
+  background: url(./img/family_1.jpg) no-repeat 20%;
+  background-position: -10% 60%;
+  background-size: 55%;
+  height: 96vh;
+  display: flex;
+  justify-content: end;
+}
+.diagonal-box-3 {
+  transform: skew(-20deg);
+  width: 70%;
+  position: relative;
+  left: 11rem;
+}
+.deskewed-box-live-section {
+  /* position: relative; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  transform: skew(20deg);
+}
+
+.deskewed-box-live-section div {
+  max-width: 63%;
+  /* max-width: 65ch; */
+}
+.deskewed-box-live-section div p {
+  max-width: 65ch;
+}
+
+#live-button i {
+  position: relative;
+  top: 0.35rem;
+}
 
 /*********************************** @Media Queries *************************************/
 
 @media only screen and (max-width: 1200px) {
   section:nth-of-type(1),
-  section:nth-of-type(2) {
+  section:nth-of-type(2),
+  section:nth-of-type(3) {
     background: #f8f9fa;
     height: 96vh;
     display: flex;
@@ -200,14 +244,17 @@ section:nth-of-type(2) {
     align-items: center;
   }
   .diagonal-box-1,
-  .diagonal-box-2 {
+  .diagonal-box-2,
+  .diagonal-box-3 {
     transform: skew(0deg);
     width: 100%;
     position: relative;
     left: 0rem;
+    right: 0rem;
   }
   .deskewed-box-work-section,
-  .deskewed-box-amenities-section {
+  .deskewed-box-amenities-section,
+  .deskewed-box-live-section {
     position: relative;
 
     display: flex;
@@ -217,10 +264,13 @@ section:nth-of-type(2) {
     height: 100%;
     margin: 0 auto;
     position: relative;
+    right: 0rem;
+    left: 0rem;
     transform: skew(0deg);
   }
   #mobile-picture-1,
-  #mobile-picture-2 {
+  #mobile-picture-2,
+  #mobile-picture-3 {
     background: url(./img/courthouse.jpg) no-repeat,
       linear-gradient(
         180deg,
@@ -239,11 +289,15 @@ section:nth-of-type(2) {
   #mobile-picture-2 {
     background: url(./img/buhl_julia_bridge.png) no-repeat center;
   }
+  #mobile-picture-3 {
+    background: url(./img/444_flags.jpg) no-repeat center;
+  }
 }
 
 @media only screen and (max-width: 624px) {
   #work-content-mobile .container,
-  #amenities-content-mobile {
+  #amenities-content-mobile .container,
+  #live-content-mobile .container {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
