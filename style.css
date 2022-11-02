@@ -236,9 +236,10 @@ section:nth-of-type(4) {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
   /* box-sizing: border-box; */
-  border-top: 5px solid #0d1b2a93;
-  border-bottom: 5px solid #0d1b2a93;
+  /* border-top: 5px solid #0d1b2a93; */
+  /* border-bottom: 5px solid #0d1b2a93; */
   box-shadow: 2px 3px 38px 0px rgba(0, 0, 0, 0.75);
 
   /* border-top: 10px solid #246eb9; */
@@ -246,10 +247,28 @@ section:nth-of-type(4) {
   min-height: 35rem;
 }
 
-section:nth-of-type(5) {
-  height: 1000px;
+/****************************** SECTION 5 (Footer) ******************************/
+footer {
+  /* margin-top: 6rem; */
+  min-height: 76vh;
   width: 100%;
   background: #f8f9fa;
+  background: #f06543;
+  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.75) inset;
+}
+
+footer div h2 {
+  position: relative;
+  top: 4.5rem;
+  /* background: #f06543; */
+  color: #0d1b2a;
+  /* padding: 1rem; */
+}
+
+footer div h2 span {
+  position: absolute;
+  bottom: 7rem;
+  border: 1px solid black;
 }
 /*********************************** @Media Queries *************************************/
 
