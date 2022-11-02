@@ -250,33 +250,47 @@ section:nth-of-type(4) {
 /****************************** SECTION 5 (Footer) ******************************/
 footer {
   /* margin-top: 6rem; */
-  min-height: 76vh;
+  min-height: 56vh;
   width: 100%;
   background: #f8f9fa;
-  /* background: url(./img/Homegrown_crop_footer.png) no-repeat center, #f06543; */
+  background: url(./img/Homegrown.png) no-repeat center, #f06543;
   /* background: #f06543; */
+
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.75) inset;
   /* display: flex; */
 }
 
-footer div h2 {
+footer div:nth-of-type(1) {
+  max-width: 35%;
+}
+
+footer h2 {
   position: relative;
-  top: 4.5rem;
+  /* top: 4.5rem; */
   /* background: #f06543; */
   color: #0d1b2a;
+  color: #f8f9fa;
   /* padding: 1rem; */
 }
 
-footer div h2 span {
+footer h2 span {
   position: absolute;
-  bottom: 7rem;
+  bottom: 4.5rem;
+  /* font-size: 1rem; */
   border: 1px solid black;
 }
 
-footer div:nth-of-type(2) {
+#poweredBy {
+  color: #0d1b2a;
+  color: #f8f9fa;
+  /* padding: 0; */
+  /* font-size: 1rem; */
+}
+
+/* footer div:nth-of-type(2) {
   min-width: 100%;
   min-height: 10rem;
-}
+} */
 /*********************************** @Media Queries *************************************/
 
 @media only screen and (max-width: 1200px) {
