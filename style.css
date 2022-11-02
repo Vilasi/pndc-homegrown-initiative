@@ -253,8 +253,10 @@ footer {
   min-height: 76vh;
   width: 100%;
   background: #f8f9fa;
-  background: #f06543;
+  /* background: url(./img/Homegrown_crop_footer.png) no-repeat center, #f06543; */
+  /* background: #f06543; */
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.75) inset;
+  /* display: flex; */
 }
 
 footer div h2 {
@@ -269,6 +271,11 @@ footer div h2 span {
   position: absolute;
   bottom: 7rem;
   border: 1px solid black;
+}
+
+footer div:nth-of-type(2) {
+  min-width: 100%;
+  min-height: 10rem;
 }
 /*********************************** @Media Queries *************************************/
 
