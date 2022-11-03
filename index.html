@@ -298,15 +298,18 @@
 
       <!-------------------------------- Footer -------------------------------->
       <footer class="container-fluid px-0">
-        <div>
+        <!----------------------- XL SCREEN FOOTER ----------------------->
+        <div class="d-none d-xl-block">
           <h2 class="display-6 fw-semibold text-light text-center">
-            <span id="poweredBy" class="badge bg-primary">Powered by</span>The
-            Penn-Northwest Homegrown Initiative
+            <span id="poweredBy" class="badge bg-primary d-none d-xl-block"
+              >Powered by</span
+            >The Penn-Northwest Homegrown Initiative
           </h2>
           <hr />
           <div></div>
         </div>
-        <div>
+        <div class="divider-div d-none d-xl-block"></div>
+        <div class="d-none d-xl-block">
           <p class="lead fw-bold text-light text-center">
             Helping Those In Mercer County PA Find Jobs And Build Meaningful
             Lives
@@ -314,9 +317,8 @@
           <hr />
           <div></div>
         </div>
-        <!-- <div>
-          
-        </div> -->
+        <!----------------------- SM -> LG SCREEN FOOTER ----------------------->
+        <h2 class="d-xl-none text-light">Test</h2>
       </footer>
     </main>
 
