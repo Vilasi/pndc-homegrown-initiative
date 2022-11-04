@@ -368,6 +368,42 @@ form div:nth-of-type(1) {
   /* position: relative; */
 }
 
+#footerLinkList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-evenly;
+}
+
+#footerLinkList nav {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+#footerLinkList nav ul li {
+  padding-bottom: 0.6rem;
+}
+
+.footer-list-item {
+  text-decoration: none;
+  color: #246eb9;
+  font-size: 1.5rem;
+}
+
+.footer-list-item span {
+  font-size: 1.1rem;
+}
+
+.footer-list-item:hover {
+  /* color: #f8f9fa; */
+  text-decoration: underline;
+  position: relative;
+  top: 0.075rem;
+}
+.footer-list-item:active {
+  color: #f8f9fa;
+}
+
 /* .btn-outline */
 /*********************************** @Media Queries *************************************/
 /*********************************** @Media Queries *************************************/
@@ -393,6 +429,18 @@ form div:nth-of-type(1) {
   .form-control {
     line-height: 1.5rem;
     font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .footer-list-item {
+    text-decoration: none;
+    color: #246eb9;
+    font-size: 1.1rem;
+  }
+
+  .footer-list-item span {
+    font-size: 0.7333rem;
   }
 }
 
