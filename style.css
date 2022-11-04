@@ -404,6 +404,13 @@ form div:nth-of-type(1) {
   color: #f8f9fa;
 }
 
+/* #mobileFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+} */
+
 /* .btn-outline */
 /*********************************** @Media Queries *************************************/
 /*********************************** @Media Queries *************************************/
@@ -464,7 +471,7 @@ form div:nth-of-type(1) {
 
 @media only screen and (max-width: 1200px) {
   footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url(./img/Homegrown.png) no-repeat center, #f06543;
 
     display: flex;
@@ -497,12 +504,23 @@ form div:nth-of-type(1) {
     color: #f8f9fa;
   }
 
-  /* footer h2 span {
-    position: absolute;
-    bottom: 5.5rem;
-    left: 0.5rem;
-    transform: rotate(-11deg);
-  } */
+  #mobileFooter {
+    margin-top: 2rem;
+  }
+
+  #mobileFooter p {
+    padding-top: 1rem;
+  }
+
+  footer form {
+    padding-bottom: 2rem;
+  }
+
+  .footer-list-item {
+    color: #f8f9fa;
+    text-decoration: underline;
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -566,6 +584,29 @@ form div:nth-of-type(1) {
   }
   #mobile-picture-3 {
     background: url(./img/444_flags.jpg) no-repeat center;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  footer > #mobileFooter {
+    margin-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer-list-item:active {
+    color: #0d6efd;
+  }
+
+  #footerLinkList {
+    margin-top: 2rem;
   }
 }
 
