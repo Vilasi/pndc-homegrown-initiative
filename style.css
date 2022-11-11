@@ -439,7 +439,7 @@ form div:nth-of-type(1) {
 @media only screen and (max-width: 1800px) {
   header {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-      url(./img/landing_placeholder.jpg) no-repeat center left fixed;
+      url(./img/landing_placeholder.jpg) no-repeat center center;
   }
 
   footer h2 span {
