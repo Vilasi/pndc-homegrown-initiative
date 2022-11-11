@@ -300,17 +300,28 @@ footer div {
 
 footer div:nth-of-type(1) {
   margin-left: 5rem;
-  margin-top: 4rem;
+  margin-top: 6rem;
 
   width: calc(100% / 3);
+  /* position: relative; */
+  /* top: 2rem; */
 }
+
+#footer-email-input {
+  margin-top: 4rem;
+}
+
+/* footer div:nth-of-type(1) form {
+  position: relative;
+  bottom: 1rem;
+} */
 
 footer div:nth-of-type(2) {
   width: calc(100% / 3);
 }
 
 footer div:nth-of-type(3) {
-  margin-right: 5rem;
+  margin-right: 8rem;
   width: calc(100% / 3);
 }
 
@@ -426,6 +437,11 @@ form div:nth-of-type(1) {
 /*********************************** @Media Queries *************************************/
 
 @media only screen and (max-width: 1800px) {
+  header {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      url(./img/landing_placeholder.jpg) no-repeat center left fixed;
+  }
+
   footer h2 span {
     transform: rotate(0deg);
     bottom: 6rem;
@@ -451,10 +467,18 @@ form div:nth-of-type(1) {
   }
 }
 
-@media only screen and (max-width: 1380px) {
+/* media screen 1428 footer h2 span bottom 12 rem */
+@media only screen and (max-width: 1428px) {
   footer h2 span {
     transform: rotate(0deg);
     bottom: 9rem;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  footer h2 span {
+    transform: rotate(0deg);
+    bottom: 12rem;
   }
 }
 @media only screen and (max-width: 1330px) {
@@ -584,6 +608,10 @@ form div:nth-of-type(1) {
   }
   #mobile-picture-3 {
     background: url(./img/444_flags.jpg) no-repeat center;
+  }
+
+  .footer-anchor-nav-scrollIn {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -736,23 +764,28 @@ form div:nth-of-type(1) {
 }
 
 .work-scrollIn-class:nth-of-type(1),
-.amenities-scrollIn:nth-child(1) {
+.amenities-scrollIn:nth-child(1),
+.footer-anchor-nav-scrollIn:nth-child(1) {
   transition-delay: 100ms;
 }
 .work-scrollIn-class:nth-child(2),
-.amenities-scrollIn:nth-child(2) {
+.amenities-scrollIn:nth-child(2),
+.footer-anchor-nav-scrollIn:nth-child(2) {
   transition-delay: 200ms;
 }
 .work-scrollIn-class:nth-child(3),
-.amenities-scrollIn:nth-child(3) {
+.amenities-scrollIn:nth-child(3),
+.footer-anchor-nav-scrollIn:nth-child(3) {
   transition-delay: 300ms;
 }
 .work-scrollIn-class:nth-child(4),
-.amenities-scrollIn:nth-child(4) {
+.amenities-scrollIn:nth-child(4),
+.footer-anchor-nav-scrollIn:nth-child(4) {
   transition-delay: 400ms;
 }
 .work-scrollIn-class:nth-child(5),
-.amenities-scrollIn:nth-child(5) {
+.amenities-scrollIn:nth-child(5),
+.footer-anchor-nav-scrollIn:nth-of-type(5) {
   transition-delay: 500ms;
 }
 
