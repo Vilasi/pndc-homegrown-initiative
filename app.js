@@ -24,15 +24,7 @@ scrollInElems.forEach((el) => observer.observe(el));
 const nav = document.querySelector('.navbar');
 const goMercerCounty = document.querySelector('#goMercerCounty');
 const mobileNavButton = document.querySelector('#mobile-nav-button');
-// nav.style.background = 'rgba(0,0,0,0.5)';
-// nav.classList.toggle('transparent-background');
-// nav.classList.remove('show');
-// goMercerCounty.classList.add('solid-background');
-// mobileNavButton.classList.add('solid-background');
 
-// console.log(screen.width);
-
-//hide nav until the user scrolls down
 let prevScrollpos = window.scrollY;
 window.onscroll = function () {
   let currentScrollPos = window.scrollY;
@@ -47,13 +39,3 @@ window.onscroll = function () {
 window.addEventListener('scroll', function () {
   console.log(window.scrollY);
 });
-
-//In portait orientation, the nav bar is transparent until the user scrolls down
-// function isPortrait() {
-//   return window.innerHeight > window.innerWidth;
-// }
-// if (isPortrait()) {
-//   nav.classList.toggle('transparent-background');
-// } else {
-//   nav.classList.remove('transparent-background');
-// }
