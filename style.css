@@ -1,3 +1,7 @@
+:root {
+  --font-family: 'Quicksand', sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -5,7 +9,8 @@ html {
 
 body,
 html {
-  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Quicksand', sans-serif; */
+  font-family: var(--font-family);
 }
 nav {
   animation: 1s ease-in 0s 1 fadeIn;
@@ -28,10 +33,13 @@ nav {
   position: relative;
   top: 5rem;
 }
-.nav-item:nth-of-type(2) {
+.nav-item:nth-of-type(2),
+.nav-item:nth-of-type(3),
+.nav-item:nth-of-type(4),
+.nav-item:nth-of-type(5) {
   border-left: none;
 }
-.nav-item:nth-of-type(3) {
+/* .nav-item:nth-of-type(3) {
   border-left: none;
 }
 .nav-item:nth-of-type(4) {
@@ -39,7 +47,7 @@ nav {
 }
 .nav-item:nth-of-type(5) {
   border-left: none;
-}
+} */
 .navbar-collapse.show,
 .collapsing {
   background-color: rgba(255, 255, 255, 0.8);

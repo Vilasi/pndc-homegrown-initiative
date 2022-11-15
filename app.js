@@ -38,30 +38,34 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
-// window.addEventListener('scroll', function () {
-//   console.log(window.scrollY);
+/**
+ *
+ * SAVING THE BELOW FOR POTENTIAL USE LATER
+ * THIS CODE ADDS EVENT LISTENERS TO ANY BUTTONS ON THE PAGE
+ * THEN, DEPENDING ON THE ID, FIRES A WINDOW.LOCATION.HREF TO MAKE THE BUTTON ACT AS A <a> TAG
+ */
+// console.log(BUTTONS);
+// BUTTONS.forEach((btn) => {
+//   btn.addEventListener('click', buttonDirectory);
 // });
 
-console.log(BUTTONS);
-BUTTONS.forEach((btn) => {
-  btn.addEventListener('click', buttonDirectory);
-});
+// // List of pages and other links to attach to buttons
+// const pages = {
+//   work: './pages/work.html',
+//   // work: 'https://www.indeed.com/jobs?q=&l=Mercer+County+PA',
+// };
 
-// List of pages and other links to attach to buttons
-const pages = {
-  work: './pages/work.html',
-};
+// // Changes window.location.href on button click to the page specified in the pages object
+// function buttonDirectory(e) {
+//   console.log('Clicked!!');
+//   console.log(e.target.id);
 
-// Changes window.location.href on button click to the page specified in the pages object
-function buttonDirectory(e) {
-  console.log('Clicked!!');
-  console.log(e.target.id);
+//   switch (e.target.id) {
+//     case 'work-button':
+//       window.location.href = pages.work;
 
-  switch (e.target.id) {
-    case 'work-button':
-      window.location.href = pages.work;
-      break;
-    default:
-      break;
-  }
-}
+//       break;
+//     default:
+//       break;
+//   }
+// }
