@@ -47,14 +47,14 @@ nav {
 }
 
 header {
-  /* background: url(./img/reservoir.jpeg) no-repeat center center fixed; */
+  /* background: url(./images/reservoir.jpeg) no-repeat center center fixed; */
 
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url(./img/landing_placeholder.jpg) no-repeat center center fixed;
+    url(./images/landing_placeholder.jpg) no-repeat center center fixed;
   /* filter: brightness(50%); */
   /* background-blend-mode: darken; */
-  /* background: url(./img/buhl_kite_field.png) no-repeat center -190px fixed; */
-  /* background: url(./img/buhl_activities_building.png) no-repeat center -190px fixed; */
+  /* background: url(./images/buhl_kite_field.png) no-repeat center -190px fixed; */
+  /* background: url(./images/buhl_activities_building.png) no-repeat center -190px fixed; */
   margin: 0 auto;
   height: 96vh;
   -webkit-background-size: cover;
@@ -133,7 +133,7 @@ header {
 section:nth-of-type(1) {
   margin-top: 6rem;
   margin-bottom: 6rem;
-  background: url(./img/courthouse.jpg) no-repeat,
+  background: url(./images/courthouse.jpg) no-repeat,
     linear-gradient(
       180deg,
       rgba(190, 223, 255, 1) 0%,
@@ -180,7 +180,7 @@ section:nth-of-type(1) {
 
 section:nth-of-type(2) {
   /* margin-top: 5rem; */
-  background: url(./img/buhl_julia_bridge.png) no-repeat right;
+  background: url(./images/buhl_julia_bridge.png) no-repeat right;
 
   height: 96vh;
   display: flex;
@@ -225,7 +225,7 @@ section:nth-of-type(3) {
   /* margin-top: 20rem; */
   margin-top: 6rem;
   margin-bottom: 6rem;
-  background: url(./img/family_1.jpg) no-repeat 20%;
+  background: url(./images/family_1.jpg) no-repeat 20%;
   background-position: -10% 60%;
   background-size: 55%;
   height: 96vh;
@@ -265,7 +265,7 @@ section:nth-of-type(3) {
 }
 /****************************** SECTION 4 (Parallax) ******************************/
 section:nth-of-type(4) {
-  background: url(./img/windy_road.jpg);
+  background: url(./images/windy_road.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -286,7 +286,7 @@ footer {
   min-height: 56vh;
   width: 100%;
   background: #f8f9fa;
-  background: url(./img/Homegrown.png) no-repeat center, #f06543;
+  background: url(./images/Homegrown.png) no-repeat center, #f06543;
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.75) inset;
 
   display: flex;
@@ -439,7 +439,7 @@ form div:nth-of-type(1) {
 @media only screen and (max-width: 1800px) {
   header {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-      url(./img/landing_placeholder.jpg) scroll center center;
+      url(./images/landing_placeholder.jpg) scroll center center;
   }
 
   footer h2 span {
@@ -496,7 +496,7 @@ form div:nth-of-type(1) {
 @media only screen and (max-width: 1200px) {
   footer {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url(./img/Homegrown.png) no-repeat center, #f06543;
+      url(./images/Homegrown.png) no-repeat center, #f06543;
 
     display: flex;
     justify-content: center;
@@ -560,7 +560,7 @@ form div:nth-of-type(1) {
   }
 
   section:neth-of-type(4) {
-    background: url(./img/windy_road.jpg) scroll center center;
+    background: url(./images/windy_road.jpg) scroll center center;
 
     /* background-size: cover;
     background-repeat: no-repeat;
@@ -595,7 +595,7 @@ form div:nth-of-type(1) {
   #mobile-picture-1,
   #mobile-picture-2,
   #mobile-picture-3 {
-    background: url(./img/courthouse.jpg) no-repeat,
+    background: url(./images/courthouse.jpg) no-repeat,
       linear-gradient(
         180deg,
         rgba(190, 223, 255, 1) 0%,
@@ -613,10 +613,10 @@ form div:nth-of-type(1) {
   }
 
   #mobile-picture-2 {
-    background: url(./img/buhl_julia_bridge.png) no-repeat center;
+    background: url(./images/buhl_julia_bridge.png) no-repeat center;
   }
   #mobile-picture-3 {
-    background: url(./img/444_flags.jpg) no-repeat center;
+    background: url(./images/444_flags.jpg) no-repeat center;
   }
 
   .footer-anchor-nav-scrollIn {
