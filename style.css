@@ -39,15 +39,7 @@ nav {
 .nav-item:nth-of-type(5) {
   border-left: none;
 }
-/* .nav-item:nth-of-type(3) {
-  border-left: none;
-}
-.nav-item:nth-of-type(4) {
-  border-left: none;
-}
-.nav-item:nth-of-type(5) {
-  border-left: none;
-} */
+
 .navbar-collapse.show,
 .collapsing {
   background-color: rgba(255, 255, 255, 0.8);
@@ -124,6 +116,7 @@ header {
   padding-right: 1rem;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
+  font-size: 6.5rem;
   /* color: #0d1b2a; */
   /* filter: brightness(150%); */
 }

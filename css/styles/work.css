@@ -1,8 +1,95 @@
 :root {
   --font-family: 'Quicksand', sans-serif;
+  --vibrant-orange: #f06543;
+  --soft-white: #f8f9fa;
 }
 
 html,
 body {
   font-family: var(--font-family);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
+nav {
+  animation: 1s ease-in 0s 1 fadeIn;
+}
+
+.nav-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.nav-item a:hover {
+  position: relative;
+  top: 0.1rem;
+}
+.nav-item a:active {
+  position: relative;
+  top: 0.2rem;
+}
+.nav-link:hover {
+  position: relative;
+  top: 5rem;
+}
+.nav-item:nth-of-type(2),
+.nav-item:nth-of-type(3),
+.nav-item:nth-of-type(4),
+.nav-item:nth-of-type(5) {
+  border-left: none;
+}
+
+.navbar-collapse.show,
+.collapsing {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 2px 2px 15px 15px;
+}
+
+header {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--soft-white);
+}
+
+header h1,
+p {
+  position: relative;
+  top: 1rem;
+}
+
+header p.lead {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+h1.display-1 {
+  font-weight: 500;
+  font-size: 6.5rem;
+}
+
+main {
+  background-color: var(--vibrant-orange);
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main div {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 60ch;
+}
+
+/* main div:nth-of-type(1) {
+} */
