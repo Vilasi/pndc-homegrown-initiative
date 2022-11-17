@@ -21,19 +21,19 @@ let iterator = 0;
 //   iterator++;
 // }
 
-// const intervalTest = setInterval(() => {
-//   //   printNums(iterator);
-//   openJobs.textContent = iterator;
-//   two.textContent = iterator;
-//   three.textContent = iterator;
-//   iterator++;
-//   if (iterator === 1000) {
-//     clearInterval(intervalTest);
-//   }
-// }, 0.001);
+const intervalTest = setInterval(() => {
+  //   printNums(iterator);
+  openJobs.textContent = iterator;
+  two.textContent = iterator;
+  three.textContent = iterator;
+  iterator++;
+  if (iterator === 1000) {
+    clearInterval(intervalTest);
+  }
+}, 0.001);
 
-for (let i = 0; i < 7001; i++) {
-  openJobs.textContent += i;
-  two.textContent += i;
-  three.textContent += i;
-}
+// for (let i = 0; i < 7001; i++) {
+//   openJobs.textContent += i;
+//   two.textContent += i;
+//   three.textContent += i;
+// }
