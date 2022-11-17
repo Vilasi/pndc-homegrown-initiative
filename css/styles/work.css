@@ -52,7 +52,12 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--soft-white);
+  /* background-color: var(--soft-white); */
+  background: linear-gradient(
+      rgba(248, 249, 250, 0.55),
+      rgba(248, 249, 250, 0.55)
+    ),
+    url(../../images/work-stock-1.jpg) 55% 62.5%;
 }
 
 header h1,

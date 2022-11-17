@@ -69,25 +69,3 @@ window.onscroll = function () {
 //       break;
 //   }
 // }
-
-function printHashtag() {
-  let userChoice = Number(prompt('Give me a number'));
-  let iteratorArray = [];
-  // console.log(userChoice, typeof userChoice);
-
-  let iterator = 1;
-  for (let i = 1; i <= userChoice; i++) {
-    // console.log(i)
-    for (let j = userChoice; j >= 0; j--) {
-      console.log(i, j);
-      if (j >= i) {
-        iteratorArray.push(' ');
-      } else {
-        iteratorArray.push('#');
-      }
-    }
-    iterator++;
-    console.log(iteratorArray.join(''));
-    iteratorArray = [];
-  }
-}
