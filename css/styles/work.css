@@ -90,10 +90,14 @@ main {
 
 main div {
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  flex-basis: 60ch;
+  /* flex-basis: 60ch; */
+}
+main div h2:nth-of-type(2) {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 /* main div:nth-of-type(1) {
