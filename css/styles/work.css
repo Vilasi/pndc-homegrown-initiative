@@ -46,7 +46,7 @@ nav {
 }
 
 header {
-  height: 65vh;
+  height: 200vh;
   width: 100%;
   display: flex;
   flex-direction: column;
