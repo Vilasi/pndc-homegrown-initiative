@@ -1,5 +1,7 @@
 :root {
-  --font-family: 'Quicksand', sans-serif;
+  /* --font-family: 'Quicksand', sans-serif; */
+  --font-family: 'Quattrocento Sans', sans-serif;
+  /* font-family: 'Quattrocento Sans', sans-serif; */
   --vibrant-orange: #f06543;
   --soft-white: #f8f9fa;
 }
