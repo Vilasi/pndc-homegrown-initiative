@@ -19,10 +19,8 @@ let iterator = 0;
 class Iterator {
   constructor(num, id, time) {
     this.num = num;
-    // this.title = title;
     this.el = document.querySelector(id);
     this.time = time;
-    // this.time = time;
     this.iterator = 0;
     this.interval = setInterval(() => {
       console.log('I am the interval');
@@ -32,20 +30,16 @@ class Iterator {
       // console.log(this.iterator);
       if (this.iterator >= this.num) {
         this.clear();
-        // this.el.textContent = `${this.iterator} ${this.title}`;
         this.writeToDom();
       } else if (this.num - this.iterator >= 1000) {
         this.iterator += 500;
         this.writeToDom();
-        // this.el.textContent = `${this.iterator} ${this.title}`;
       } else if (this.num - this.iterator > 100) {
         this.iterator += 100;
         this.writeToDom();
-        // this.el.textContent = `${this.iterator} ${this.title}`;
       } else {
         this.iterator++;
         this.writeToDom();
-        // this.el.textContent = `${this.iterator} ${this.title}`;
       }
     }, this.time);
   }
@@ -59,10 +53,6 @@ class Iterator {
     this.el.textContent = `${this.iterator}`;
   };
 }
-// const salary = new Iterator(45000, '#one', 0.01);
-// const schools = new Iterator(9, '#two', 250);
-// const jobOpenings = new Iterator(7829, '#three', 35);
-// test.test();
 
 let target = document.querySelector('#countingValues');
 console.log(target);
@@ -82,6 +72,3 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(target);
-// for (const el of target) {
-// }
-// observer.observe(target);
