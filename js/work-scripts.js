@@ -106,10 +106,11 @@ function checkDay() {
 }
 
 function pickNumberRange(min, max, hardcodedValue) {
-  if (2052 !== checkDay()) {
+  if (2052 === checkDay()) {
     console.log(true);
     return hardcodedValue;
   } else {
+    console.log(false);
     return randomNum(min, max);
   }
 }
