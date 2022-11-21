@@ -16,9 +16,15 @@ body {
   /* scroll-behavior: smooth; */
   scroll-behavior: auto;
   /* scroll-snap-type: both; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  overflow-y: scroll;
   /* font-size: 0.5rem; */
 }
+
+/* .overlay { 
+   position: fixed; 
+   overflow-y: scroll;
+   inset: 0; } */
 
 nav {
   animation: 1s ease-in 0s 1 fadeIn;

@@ -32,7 +32,7 @@ class Iterator {
     clearInterval(this.interval);
   };
 
-  writeToDom = (num) => {
+  writeToDom = async (num) => {
     let stringFromNum = num.toString();
     let reversedArray = Array.from(stringFromNum).reverse();
     let arrayFromString = [];
@@ -59,41 +59,47 @@ const options = {
 };
 
 // Make new instance of Iterator class on Intersection - making neat counting/iterating DOM effect
-let target = document.querySelector('#countingValues');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    // Add classList to increase font-size/width
-    console.log(entry);
-    const childrenCollection = entry.target.children;
-    for (el of childrenCollection) {
-      // console.log(el.children[0].classList);
-      el.children[0].classList.add('numericals');
-    }
-    if (entry.isIntersecting) {
-      setTimeout(() => {
-        // constructor(num, id, time); CONSTRUCTOR CALL FOR REFERENCE - LINE 7
-        const salary = new Iterator(
-          pickNumberRange(56000, 59000, 58500),
-          '#one',
-          0.01
-        );
-        const schools = new Iterator(9, '#two', 250);
-        const jobOpenings = new Iterator(
-          pickNumberRange(7600, 8050, 7829),
-          '#three',
-          25
-        );
-      }, 250);
-      // observer.unobserve(entry.target);
-      observer.disconnect();
-    } else {
-      const salary = new Iterator('', '#one', 0);
-      const schools = new Iterator('', '#two', 0);
-      const jobOpenings = new Iterator('', '#three', 0);
-    }
-  });
-}, options);
-observer.observe(target);
+if (window.innerWidth > 992) {
+  let target = document.querySelector('#countingValues');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      // Add classList to increase font-size/width
+      console.log(entry);
+      const childrenCollection = entry.target.children;
+      for (el of childrenCollection) {
+        // console.log(el.children[0].classList);
+        el.children[0].classList.add('numericals');
+      }
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          // constructor(num, id, time); CONSTRUCTOR CALL FOR REFERENCE - LINE 7
+          const salary = new Iterator(
+            pickNumberRange(56000, 59000, 58500),
+            '#one',
+            0.01
+          );
+          const schools = new Iterator(9, '#two', 250);
+          const jobOpenings = new Iterator(
+            pickNumberRange(7600, 8050, 7829),
+            '#three',
+            25
+          );
+        }, 250);
+        // observer.unobserve(entry.target);
+        observer.disconnect();
+      } else {
+        const salary = new Iterator('', '#one', 0);
+        const schools = new Iterator('', '#two', 0);
+        const jobOpenings = new Iterator('', '#three', 0);
+      }
+    });
+  }, options);
+  observer.observe(target);
+} else {
+  document.querySelector('#one').textContent = '52,569';
+  document.querySelector('#two').textContent = '9';
+  document.querySelector('#three').textContent = '7,895';
+}
 
 // generate a random number between 7500 and 8500
 
