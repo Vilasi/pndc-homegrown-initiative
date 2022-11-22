@@ -2,6 +2,9 @@
 // const two = document.querySelector('#two');
 // const three = document.querySelector('#three');
 const BODY = document.querySelector('body');
+const VALUES = document.querySelectorAll('.countingValues h2');
+console.log(VALUES);
+// VALUES.classList.add('text-start');
 
 let iterator = 0;
 
@@ -60,7 +63,7 @@ const options = {
 
 // Make new instance of Iterator class on Intersection - making neat counting/iterating DOM effect
 if (window.innerWidth > 992) {
-  let target = document.querySelector('#countingValues');
+  let target = document.querySelector('.countingValues');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       // Add classList to increase font-size/width
@@ -99,6 +102,11 @@ if (window.innerWidth > 992) {
   document.querySelector('#one').textContent = '52,569';
   document.querySelector('#two').textContent = '9';
   document.querySelector('#three').textContent = '7,895';
+  for (let h2 of VALUES) {
+    h2.classList.add('text-start');
+    h2.classList.remove('text-center');
+    console.log(h2.children[0].style);
+  }
 }
 
 // generate a random number between 7500 and 8500
