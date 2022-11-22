@@ -70,8 +70,6 @@ if (window.innerWidth > 992) {
       console.log(entry);
       const childrenCollection = entry.target.children;
       for (el of childrenCollection) {
-        // console.log(el.children[0].classList);
-        // console.log(el.children[0]);
         el.children[0].classList.add('numericals');
       }
       if (entry.isIntersecting) {
@@ -117,8 +115,6 @@ if (window.innerWidth > 992) {
     h2.children[0].classList.remove('numericals');
   }
 }
-
-// generate a random number between 7500 and 8500
 
 // function that generates a number between its first parameter and its second parameter
 function randomNum(min, max) {
