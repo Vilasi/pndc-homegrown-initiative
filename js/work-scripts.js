@@ -144,3 +144,12 @@ function pickNumberRange(min, max, hardcodedValue) {
     return randomNum(min, max);
   }
 }
+
+// Close mobile nav dropdown on scroll
+const mobileNavButton = document.querySelector('#mobile-nav-button');
+const navBarCollapseBar = document.querySelector('#navbarSupportedContent');
+window.addEventListener('scroll', (e) => {
+  console.log(mobileNavButton.getAttribute('aria-expanded'));
+  mobileNavButton.setAttribute('aria-expanded', 'false');
+  navBarCollapseBar.classList.remove('show');
+});

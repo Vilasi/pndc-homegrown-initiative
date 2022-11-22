@@ -26,19 +26,19 @@ scrollInElems.forEach((el) => observer.observe(el));
 const nav = document.querySelector('.navbar');
 const goMercerCounty = document.querySelector('#goMercerCounty');
 const mobileNavButton = document.querySelector('#mobile-nav-button');
-
+const navBarCollapseBar = document.querySelector('#navbarSupportedContent');
 // Hides the
-window.addEventListener('load', (e) => {
-  console.log(e);
-  console.log(window.scrollY);
-  if (window.scrollY === 0 && window.screen.availWidth < 992) {
-    nav.style.top = '-100px';
-    // nav.style.opacity = 0;
-  } else {
-    nav.style.top = '0';
-    // nav.style.opacity = 1;
-  }
-});
+// window.addEventListener('load', (e) => {
+//   console.log(e);
+//   console.log(window.scrollY);
+//   if (window.scrollY === 0 && window.screen.availWidth < 992) {
+//     nav.style.top = '-100px';
+//     // nav.style.opacity = 0;
+//   } else {
+//     nav.style.top = '0';
+//     // nav.style.opacity = 1;
+//   }
+// });
 let prevScrollpos = window.scrollY;
 window.onscroll = function () {
   let currentScrollPos = window.scrollY;
@@ -46,6 +46,9 @@ window.onscroll = function () {
     nav.style.top = '0';
   } else {
     nav.style.top = '-100px';
+    console.log(nav);
+    mobileNavButton.setAttribute('aria-expanded', 'false');
+    navBarCollapseBar.classList.remove('show');
   }
   prevScrollpos = currentScrollPos;
 };
