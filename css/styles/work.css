@@ -4,11 +4,11 @@
   /* font-family: 'Quattrocento Sans', sans-serif; */
   --vibrant-orange: #f06543;
   --soft-white: #f8f9fa;
-  --padding-t: 7rem;
+  --desktop-padding-t: 7rem;
   --mobile-padding-X: 1rem;
 
-  --numeric-values-font-size: 6rem;
-  --numeric-h2-font-size: 4rem;
+  --numeric-values-font-size: 2.8em;
+  --numeric-h2-font-size: 2.5em;
   --section-margin-y: 6rem;
 }
 
@@ -122,14 +122,14 @@ main div h2.display-2 {
 }
 
 main div h2:nth-of-type(1) {
-  padding-top: var(--padding-t);
+  padding-top: var(--desktop-padding-t);
 }
 main div h2:nth-of-type(2) {
-  padding-bottom: var(--padding-t);
-  padding-top: var(--padding-t);
+  padding-bottom: var(--desktop-padding-t);
+  padding-top: var(--desktop-padding-t);
 }
 main div h2:nth-of-type(3) {
-  padding-bottom: var(--padding-t);
+  padding-bottom: var(--desktop-padding-t);
 }
 
 /* main div h2 span {
@@ -137,6 +137,12 @@ main div h2:nth-of-type(3) {
 
 .numericals {
   display: inline-block;
+  min-width: 20%;
+  font-size: var(--numeric-values-font-size);
+}
+
+.numericals-mobile {
+  display: block;
   min-width: 20%;
   font-size: var(--numeric-values-font-size);
 }

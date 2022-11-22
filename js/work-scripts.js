@@ -3,7 +3,7 @@
 // const three = document.querySelector('#three');
 const BODY = document.querySelector('body');
 const VALUES = document.querySelectorAll('.countingValues h2');
-console.log(VALUES);
+// console.log(VALUES);
 // VALUES.classList.add('text-start');
 
 let iterator = 0;
@@ -35,7 +35,7 @@ class Iterator {
     clearInterval(this.interval);
   };
 
-  writeToDom = async (num) => {
+  writeToDom = (num) => {
     let stringFromNum = num.toString();
     let reversedArray = Array.from(stringFromNum).reverse();
     let arrayFromString = [];
@@ -71,13 +71,14 @@ if (window.innerWidth > 992) {
       const childrenCollection = entry.target.children;
       for (el of childrenCollection) {
         // console.log(el.children[0].classList);
+        // console.log(el.children[0]);
         el.children[0].classList.add('numericals');
       }
       if (entry.isIntersecting) {
         setTimeout(() => {
           // constructor(num, id, time); CONSTRUCTOR CALL FOR REFERENCE - LINE 7
           const salary = new Iterator(
-            pickNumberRange(56000, 59000, 58500),
+            pickNumberRange(56500, 58500, 58500),
             '#one',
             0.01
           );
@@ -99,13 +100,21 @@ if (window.innerWidth > 992) {
   }, options);
   observer.observe(target);
 } else {
-  document.querySelector('#one').textContent = '52,569';
+  document.querySelector('#firstH2').innerHTML =
+    '<span class="text-start" id="one" style="font-size: 2.5em; display: block;">$52,569</span> Average Salary';
+  // document.querySelector('#one').textContent = '52,569';
   document.querySelector('#two').textContent = '9';
   document.querySelector('#three').textContent = '7,895';
   for (let h2 of VALUES) {
     h2.classList.add('text-start');
     h2.classList.remove('text-center');
     console.log(h2.children[0].style);
+    h2.children[0].style.fontSize = '2.5em';
+    h2.children[0].style.display = 'block';
+    h2.children[0].classList.add('text-start');
+    h2.children[0].classList.add('numericals-mobile');
+    h2.children[0].classList.remove('text-end');
+    h2.children[0].classList.remove('numericals');
   }
 }
 
