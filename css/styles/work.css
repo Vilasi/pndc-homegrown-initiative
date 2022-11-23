@@ -155,15 +155,16 @@ main div h2:nth-of-type(3) {
 }
 
 /* PICTURE LINKS TO JOBS/SCHOOLS */
-#picture-links {
+#picture-links-section {
   display: flex;
   /* flex-wrap: wrap; */
+
   align-items: center;
   min-width: 100%;
   /* border: 2px solid black; */
 }
 
-#picture-links div {
+#picture-links-section div {
   min-width: 50%;
 }
 
@@ -216,7 +217,7 @@ main div h2:nth-of-type(3) {
     text-align: left;
   }
 
-  #picture-links {
+  #picture-links-section {
     display: flex;
     /* flex-wrap: wrap; */
     flex-direction: column;
@@ -226,7 +227,12 @@ main div h2:nth-of-type(3) {
     /* border: 2px solid black; */
   }
 
+  #picture-links-section div {
+    width: 100%;
+  }
+
   .image img {
     height: 20rem;
+    width: 100%;
   }
 }

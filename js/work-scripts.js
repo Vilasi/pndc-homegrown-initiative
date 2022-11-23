@@ -80,7 +80,7 @@ if (window.innerWidth > 992) {
             '#one',
             0.01
           );
-          const schools = new Iterator(6, '#two', 250);
+          const schools = new Iterator(7, '#two', 250);
           const jobOpenings = new Iterator(
             pickNumberRange(7800, 7900, 7829),
             '#three',
@@ -154,15 +154,44 @@ window.addEventListener('scroll', (e) => {
   navBarCollapseBar.classList.remove('show');
 });
 
-const imageLinks = document.querySelector('#picture-links');
+// Link to College or Job sites
+const imageLinks = document.querySelector('#picture-links-section');
 const links = {
+  pennstate: 'https://shenango.psu.edu/',
+  groveCity: 'https://www.gcc.edu/',
   thiel: 'https://www.thiel.edu/',
+  lti: 'https://www.laurel.edu/lti-hermitage',
+  westminster: 'https://www.westminster.edu/',
+  mccc: 'https://www.mercerccc.org/',
+  bccc: 'https://www.bc3.edu/',
+  indeed: 'https://www.indeed.com/jobs?q=&l=Mercer+County+PA',
 };
 
 function setHref(id) {
   switch (id) {
+    case 'pennstate':
+      window.location.href = links.pennstate;
+      break;
+    case 'grove-city':
+      window.location.href = links.groveCity;
+      break;
     case 'thiel':
       window.location.href = links.thiel;
+      break;
+    case 'LTI':
+      window.location.href = links.lti;
+      break;
+    case 'westminster':
+      window.location.href = links.westminster;
+      break;
+    case 'mccc':
+      window.location.href = links.mccc;
+      break;
+    case 'bc3':
+      window.location.href = links.bccc;
+      break;
+    case 'jobs-image':
+      window.location.href = links.indeed;
       break;
 
     default:
@@ -173,7 +202,8 @@ function setHref(id) {
 console.log(imageLinks);
 imageLinks.addEventListener('click', (e) => {
   console.log('Click!!!');
-  console.log(e.target);
+  console.log(e.target.id);
+  setHref(e.target.id);
 });
 
 // for (let a of imageLinks) {
