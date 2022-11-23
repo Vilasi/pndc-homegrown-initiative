@@ -76,13 +76,13 @@ if (window.innerWidth > 992) {
         setTimeout(() => {
           // constructor(num, id, time); CONSTRUCTOR CALL FOR REFERENCE - LINE 7
           const salary = new Iterator(
-            pickNumberRange(56500, 58500, 58500),
+            pickNumberRange(57000, 58000, 58500),
             '#one',
             0.01
           );
-          const schools = new Iterator(9, '#two', 250);
+          const schools = new Iterator(6, '#two', 250);
           const jobOpenings = new Iterator(
-            pickNumberRange(7600, 8050, 7829),
+            pickNumberRange(7800, 7900, 7829),
             '#three',
             25
           );
@@ -153,3 +153,32 @@ window.addEventListener('scroll', (e) => {
   mobileNavButton.setAttribute('aria-expanded', 'false');
   navBarCollapseBar.classList.remove('show');
 });
+
+const imageLinks = document.querySelector('#picture-links');
+const links = {
+  thiel: 'https://www.thiel.edu/',
+};
+
+function setHref(id) {
+  switch (id) {
+    case 'thiel':
+      window.location.href = links.thiel;
+      break;
+
+    default:
+      break;
+  }
+}
+
+console.log(imageLinks);
+imageLinks.addEventListener('click', (e) => {
+  console.log('Click!!!');
+  console.log(e.target);
+});
+
+// for (let a of imageLinks) {
+//   console.log(a.id);
+//   a.addEventListener('click', (e) => {
+//     console.log(a.id);
+//   });
+// }
