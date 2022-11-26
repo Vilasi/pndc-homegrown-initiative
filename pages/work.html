@@ -407,9 +407,37 @@
               </label>
             </div>
           </div>
+          <div class="col-md-6">
+            <label for="typeOfWork" class="form-label"
+              >What Type of Work Are You Seeking?<span class="text-danger">
+                *</span
+              ></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="typeOfWork"
+              placeholder="Eg: Nursing, Realtor, etc."
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="resume" class="form-label"
+                >Upload Resume <span class="text-danger"> *</span></label
+              >
+              <input
+                class="form-control"
+                type="file"
+                id="resume"
+                required
+                accept=".doc, .docx, .xml, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document, .odt, .pdf, .rtf, .tex, .txt, .wpd"
+              />
+            </div>
+          </div>
           <!-------------------------------------------------------- ADDRESS STUFF DELETE LATER -->
 
-          <div class="col-12">
+          <!-- <div class="col-12">
             <label for="inputAddress2" class="form-label">Address 2</label>
             <input
               type="text"
@@ -418,7 +446,7 @@
               placeholder="Apartment, studio, or floor"
               disabled
             />
-          </div>
+          </div> -->
 
           <!-- <div class="col-md-6">
               <label for="inputCity" class="form-label">City</label>
