@@ -67,7 +67,7 @@ if (window.innerWidth > 992) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       // Add classList to increase font-size/width
-      console.log(entry);
+      // console.log(entry);
       const childrenCollection = entry.target.children;
       for (el of childrenCollection) {
         el.children[0].classList.add('numericals');
@@ -106,7 +106,7 @@ if (window.innerWidth > 992) {
   for (let h2 of VALUES) {
     h2.classList.add('text-start');
     h2.classList.remove('text-center');
-    console.log(h2.children[0].style);
+    // console.log(h2.children[0].style);
     h2.children[0].style.fontSize = '2.5em';
     h2.children[0].style.display = 'block';
     h2.children[0].classList.add('text-start');
@@ -140,7 +140,7 @@ function pickNumberRange(min, max, hardcodedValue) {
     console.log(true);
     return hardcodedValue;
   } else {
-    console.log(false);
+    // console.log(false);
     return randomNum(min, max);
   }
 }
@@ -149,7 +149,7 @@ function pickNumberRange(min, max, hardcodedValue) {
 const mobileNavButton = document.querySelector('#mobile-nav-button');
 const navBarCollapseBar = document.querySelector('#navbarSupportedContent');
 window.addEventListener('scroll', (e) => {
-  console.log(mobileNavButton.getAttribute('aria-expanded'));
+  // console.log(mobileNavButton.getAttribute('aria-expanded'));
   mobileNavButton.setAttribute('aria-expanded', 'false');
   navBarCollapseBar.classList.remove('show');
 });
@@ -199,10 +199,10 @@ function setHref(id) {
   }
 }
 
-console.log(imageLinks);
+// console.log(imageLinks);
 imageLinks.addEventListener('click', (e) => {
   console.log('Click!!!');
-  console.log(e.target.id);
+  // console.log(e.target.id);
   setHref(e.target.id);
 });
 
@@ -214,3 +214,52 @@ imageLinks.addEventListener('click', (e) => {
 // }
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
+
+const FORM = document.querySelector('form');
+// window.addEventListener('load', (e) => {
+//   // FORM.preventDefault();
+//   // console.log('OBJECT object');
+// });
+
+const checkBoxes = document.querySelectorAll('input[type="radio"]');
+const radioButtons = document.querySelectorAll('.college-check');
+const disabledInputs = document.querySelectorAll('.disabled-inputs');
+const disabledInputsLabels = document.querySelectorAll(
+  '.disabled-input-labels'
+);
+
+for (let input of disabledInputs) {
+  input.setAttribute('disabled', '');
+}
+
+radioButtons.forEach((radioBtn) => {
+  radioBtn.addEventListener('input', (e) => {
+    // console.log(e);
+    e.preventDefault();
+    if (e.target.value === 'true') {
+      for (let input of disabledInputs) {
+        input.removeAttribute('disabled');
+        input.setAttribute('required', '');
+      }
+      for (let label of disabledInputsLabels) {
+        label.classList.remove('text-secondary');
+        const asterisk = document.createElement('span');
+        asterisk.append(' *');
+        asterisk.classList.add('asterisk', 'text-danger');
+        label.append(asterisk);
+      }
+    } else {
+      for (let input of disabledInputs) {
+        input.setAttribute('disabled', '');
+        input.removeAttribute('required');
+      }
+      for (let label of disabledInputsLabels) {
+        label.classList.add('text-secondary');
+        const asterisk = document.querySelectorAll('.asterisk');
+        for (let span of asterisk) {
+          span.remove();
+        }
+      }
+    }
+  });
+});

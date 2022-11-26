@@ -227,26 +227,44 @@
       <article id="job-application" class="container">
         <h2 class="display-2">Looking For Work?</h2>
         <p class="lead">
-          In Partnership with Mercer County's own Penn-Northwest Development
+          In Partnership with Mercer County's Penn-Northwest Development
           Corporation, we're here to help you find a job that's a perfect fit!
         </p>
-        <p>
+        <p class="lead">
           Simply enter your information below and the people at Penn Northwest
-          will be in contact
+          will be in contact.
         </p>
 
         <!------------------------------------------------- FORM ------------------------------------------------->
-        <form class="row g-3 pt-5">
+        <form class="row g-3 py-5">
           <div class="col-md-6">
-            <label for="firstName" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="firstName" required />
+            <label for="firstName" class="form-label"
+              >First Name <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              placeholder="John"
+              required
+            />
           </div>
           <div class="col-md-6">
-            <label for="lastName" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="lastName" required />
+            <label for="lastName" class="form-label"
+              >Last Name <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              placeholder="Smith"
+              required
+            />
           </div>
           <div class="col-md-6">
-            <label for="email" class="form-label">Email</label>
+            <label for="email" class="form-label"
+              >Email <span class="text-danger">*</span></label
+            >
             <input
               type="email"
               class="form-control"
@@ -256,61 +274,177 @@
             />
           </div>
           <div class="col-md-6">
-            <div class="input-group">
-              <label for="phoneNumber" class="form-label">Phone Number</label>
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phoneNumber"
+              pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+              placeholder="123-456-7890"
+            />
+          </div>
+          <p>
+            Have You Graduated High School? <span class="text-danger">*</span>
+          </p>
+          <div>
+            <div class="form-check">
               <input
-                type="tel"
-                class="form-control"
-                id="phoneNumber"
-                pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
-                placeholder="123-456-7890"
+                class="form-check-input"
+                type="radio"
+                name="highschoolRadio"
+                id="highschoolRadioTrue"
+                value="true"
+                required
               />
+              <label class="form-check-label" for="highschoolRadioTrue">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="highschoolRadio"
+                id="highschoolRadioFalse"
+                value="false"
+                checked
+                required
+              />
+              <label class="form-check-label" for="highschoolRadioFalse">
+                No
+              </label>
             </div>
           </div>
 
-          <div class="col-12">
-            <label for="inputAddress" class="form-label">Address</label>
+          <p>
+            Have You Attended College Or Trade School?
+            <span class="text-danger">*</span>
+          </p>
+          <div>
+            <div class="form-check">
+              <input
+                class="form-check-input college-check"
+                type="radio"
+                name="collegeRadio"
+                id="collegeRadioTrue"
+                value="true"
+                required
+              />
+              <label class="form-check-label" for="collegeRadioTrue">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input college-check"
+                type="radio"
+                name="collegeRadio"
+                id="collegeRadioFalse"
+                value="false"
+                required
+              />
+              <label class="form-check-label" for="collegeRadioFalse">
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label
+              for="schoolName"
+              class="form-label disabled-input-labels text-secondary"
+              >What college/trade school did you attend?</label
+            >
             <input
               type="text"
-              class="form-control"
-              id="inputAddress"
-              placeholder="1234 Main St"
+              class="form-control disabled-inputs"
+              id="schoolName"
+              placeholder="School Name"
+              disabled
             />
           </div>
+          <div class="col-md-6">
+            <label
+              for="schoolMajor"
+              class="form-label disabled-input-labels text-secondary"
+              >What was your major/field of study?</label
+            >
+            <input
+              type="text"
+              class="form-control disabled-inputs"
+              id="schoolMajor"
+              placeholder="Field of Study"
+              disabled
+            />
+          </div>
+
+          <div>
+            <p class="disabled-input-labels text-secondary">
+              Have you graduated?
+            </p>
+            <div class="form-check">
+              <input
+                class="form-check-input disabled-inputs"
+                type="radio"
+                name="didYouGraduateRadio"
+                id="didYouGraduateRadioTrue"
+                value="yes"
+              />
+              <label class="form-check-label" for="didYouGraduateRadioTrue">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input disabled-inputs"
+                type="radio"
+                name="didYouGraduateRadio"
+                id="didYouGraduateRadioFalse"
+                value="no"
+              />
+              <label class="form-check-label" for="didYouGraduateRadioFalse">
+                No
+              </label>
+            </div>
+          </div>
+          <!-------------------------------------------------------- ADDRESS STUFF DELETE LATER -->
+
           <div class="col-12">
             <label for="inputAddress2" class="form-label">Address 2</label>
             <input
               type="text"
-              class="form-control"
+              class="form-control disabled-inputs"
               id="inputAddress2"
               placeholder="Apartment, studio, or floor"
+              disabled
             />
           </div>
-          <div class="col-md-6">
-            <label for="inputCity" class="form-label">City</label>
+
+          <!-- <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
             <input type="text" class="form-control" id="inputCity" />
-          </div>
-          <div class="col-md-4">
+          </div> -->
+          <!-- <div class="col-md-4">
             <label for="inputState" class="form-label">State</label>
             <select id="inputState" class="form-select">
               <option selected>Choose...</option>
               <option>...</option>
             </select>
-          </div>
-          <div class="col-md-2">
+          </div> -->
+          <!-- <div class="col-md-2">
             <label for="inputZip" class="form-label">Zip</label>
             <input type="text" class="form-control" id="inputZip" />
-          </div>
-          <div class="col-12">
+          </div> -->
+          <!-- <div class="col-12">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="gridCheck" />
               <label class="form-check-label" for="gridCheck">
                 Check me out
               </label>
             </div>
-          </div>
+          </div> -->
           <div class="col-12">
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
       </article>
