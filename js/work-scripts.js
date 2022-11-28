@@ -206,21 +206,6 @@ imageLinks.addEventListener('click', (e) => {
   setHref(e.target.id);
 });
 
-// for (let a of imageLinks) {
-//   console.log(a.id);
-//   a.addEventListener('click', (e) => {
-//     console.log(a.id);
-//   });
-// }
-
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-
-const FORM = document.querySelector('form');
-// window.addEventListener('load', (e) => {
-//   // FORM.preventDefault();
-//   // console.log('OBJECT object');
-// });
-
 const checkBoxes = document.querySelectorAll('input[type="radio"]');
 const radioButtons = document.querySelectorAll('.college-check');
 const disabledInputs = document.querySelectorAll('.disabled-inputs');
@@ -262,4 +247,15 @@ radioButtons.forEach((radioBtn) => {
       }
     }
   });
+});
+
+// const submitButton = document.querySelector('#form-submit-button');
+//**************  sdfsdf@dfdf.com  *************
+
+const FORM = document.querySelector('form');
+
+FORM.addEventListener('submit', (e) => {
+  console.log(e);
+  e.preventDefault();
+  e.target.reset();
 });
