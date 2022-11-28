@@ -254,8 +254,8 @@ radioButtons.forEach((radioBtn) => {
 
 const FORM = document.querySelector('form');
 
-FORM.addEventListener('submit', (e) => {
-  console.log(e);
-  e.preventDefault();
-  e.target.reset();
-});
+// FORM.addEventListener('submit', (e) => {
+//   console.log(e);
+//   e.preventDefault();
+//   e.target.reset();
+// });
