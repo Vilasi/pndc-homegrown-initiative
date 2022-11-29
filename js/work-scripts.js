@@ -221,7 +221,7 @@ collegeCheckRadioButtons.forEach((radioBtn) => {
   radioBtn.addEventListener('input', (e) => {
     // console.log(e);
     e.preventDefault();
-    if (e.target.value === 'I have graduated college/trade school') {
+    if (e.target.value === 'I have attended college/trade school') {
       for (let input of disabledInputs) {
         input.removeAttribute('disabled');
         input.setAttribute('required', '');
