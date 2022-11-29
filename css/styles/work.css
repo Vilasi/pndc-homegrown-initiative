@@ -246,6 +246,11 @@ footer div:nth-of-type(1) {
   padding-bottom: var(--desktop-padding-t);
 }
 
+footer div a:hover {
+  position: relative;
+  top: 1px;
+}
+
 /* footer i {
   border: 1px solid var(--soft-white);
   border-radius: 50%;
