@@ -92,7 +92,7 @@ if (window.innerWidth < 624) {
   tourBtn.href = '';
   tourBtn.addEventListener('click', (e) => {
     window.scrollBy({
-      top: 750,
+      top: 650,
       left: 0,
       behavior: 'smooth',
     });
