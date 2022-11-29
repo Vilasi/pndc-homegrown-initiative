@@ -207,7 +207,7 @@ imageLinks.addEventListener('click', (e) => {
 });
 
 const checkBoxes = document.querySelectorAll('input[type="radio"]');
-const radioButtons = document.querySelectorAll('.college-check');
+const collegeCheckRadioButtons = document.querySelectorAll('.college-check');
 const disabledInputs = document.querySelectorAll('.disabled-inputs');
 const disabledInputsLabels = document.querySelectorAll(
   '.disabled-input-labels'
@@ -217,11 +217,11 @@ for (let input of disabledInputs) {
   input.setAttribute('disabled', '');
 }
 
-radioButtons.forEach((radioBtn) => {
+collegeCheckRadioButtons.forEach((radioBtn) => {
   radioBtn.addEventListener('input', (e) => {
     // console.log(e);
     e.preventDefault();
-    if (e.target.value === 'true') {
+    if (e.target.value === 'I have graduated college/trade school') {
       for (let input of disabledInputs) {
         input.removeAttribute('disabled');
         input.setAttribute('required', '');
