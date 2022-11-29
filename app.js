@@ -84,3 +84,19 @@ window.onscroll = function () {
 //       break;
 //   }
 // }
+
+console.log(window.innerWidth);
+if (window.innerWidth < 624) {
+  const tourBtn = document.querySelector('#tour-btn');
+  console.log(tourBtn);
+  tourBtn.href = '';
+  tourBtn.addEventListener('click', (e) => {
+    window.scrollBy({
+      top: 750,
+      left: 0,
+      behavior: 'smooth',
+    });
+    // window.preventDefault();
+    e.preventDefault();
+  });
+}

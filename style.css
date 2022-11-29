@@ -663,13 +663,26 @@ form div:nth-of-type(1) {
 
 @media only screen and (max-width: 624px) {
   header h1.landing-intro {
-    font-size: 4rem;
+    font-size: 3.2rem;
+    text-align: left !important;
+  }
+
+  header.h1.text-center {
+    text-align: left;
   }
   #work-content-mobile .container,
   #amenities-content-mobile .container,
   #live-content-mobile .container {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  #tour-btn-div {
+    justify-content: flex-start !important;
+  }
+
+  #tour-btn-div a {
+    margin-left: 1rem;
   }
 }
 
