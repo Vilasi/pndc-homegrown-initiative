@@ -35,10 +35,15 @@ nav {
   font-family: var(--font-family-quicksand);
 }
 
+ul.navbar-nav {
+  background-color: var(--soft-white);
+}
+
 .nav-item {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-left: 1rem;
   margin-right: 1rem;
+  background-color: var(--soft-white);
 }
 .nav-item a:hover {
   position: relative;

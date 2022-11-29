@@ -1,6 +1,7 @@
 :root {
   --font-family: 'Quicksand', sans-serif;
   --font-family-two: 'Quattrocento Sans', sans-serif;
+  --soft-white: #f8f9fa;
 }
 
 html {
@@ -17,10 +18,15 @@ nav {
   animation: 1s ease-in 0s 1 fadeIn;
 }
 
+ul.navbar-nav {
+  background-color: var(--soft-white);
+}
+
 .nav-item {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-left: 1rem;
   margin-right: 1rem;
+  background-color: var(--soft-white);
 }
 .nav-item a:hover {
   position: relative;
