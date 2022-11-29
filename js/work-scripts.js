@@ -216,6 +216,9 @@ const disabledInputsLabels = document.querySelectorAll(
 for (let input of disabledInputs) {
   input.setAttribute('disabled', '');
 }
+for (let label of disabledInputsLabels) {
+  label.classList.add('text-secondary');
+}
 
 collegeCheckRadioButtons.forEach((radioBtn) => {
   radioBtn.addEventListener('input', (e) => {
@@ -227,11 +230,14 @@ collegeCheckRadioButtons.forEach((radioBtn) => {
         input.setAttribute('required', '');
       }
       for (let label of disabledInputsLabels) {
+        console.log(label);
         label.classList.remove('text-secondary');
         const asterisk = document.createElement('span');
         asterisk.append(' *');
         asterisk.classList.add('asterisk', 'text-danger');
-        label.append(asterisk);
+        if (!label.classList.contains('no-star')) {
+          label.append(asterisk);
+        }
       }
     } else {
       for (let input of disabledInputs) {
