@@ -4,6 +4,7 @@
 
   --vibrant-orange: #f06543;
   --soft-white: #f8f9fa;
+  --dark-blue: #0d1b2a;
 
   --desktop-padding-t: 6rem;
   --mobile-padding-X: 1rem;
@@ -71,6 +72,10 @@ ul.navbar-nav {
   padding-top: 0.5rem;
   padding-bottom: 1rem;
 }
+.active {
+  border-bottom: 2px solid var(--dark-blue) !important;
+}
+
 /****************************** END NAV STYLES ******************************/
 
 header {

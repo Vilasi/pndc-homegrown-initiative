@@ -100,3 +100,8 @@ if (window.innerWidth < 624) {
     e.preventDefault();
   });
 }
+
+const DELETETESTBUTTON = document.querySelector('#alert-width');
+DELETETESTBUTTON.addEventListener('click', (e) => {
+  alert(window.innerWidth);
+});
