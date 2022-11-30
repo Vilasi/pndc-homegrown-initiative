@@ -19,6 +19,7 @@ body {
   font-family: var(--font-family);
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background: var(--soft-white);
 }
 
 /***************************** START NAV STYLES *****************************/
@@ -91,6 +92,7 @@ header {
   /* background-size: stretch; */
   background-attachment: fixed;
   background-position: 50% 40%;
+  margin-bottom: var(--section-margin-y);
 }
 
 header h1,
@@ -111,6 +113,57 @@ h1.display-1 {
   font-size: var(--header-fs);
 }
 
+main {
+  font-family: var(--font-family-quicksand);
+}
+
+main h2.display-1 {
+  margin-bottom: var(--section-margin-y);
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: var(--section-margin-y);
+}
+
+.section-margin-top {
+  margin-top: var(--section-margin-y);
+}
+section article {
+  flex-basis: 1;
+  max-width: 50%;
+  height: auto;
+}
+
+section article a {
+  margin-top: 1.5rem;
+}
+
+section aside {
+  flex-basis: 1;
+  max-width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+section aside img {
+  max-width: 80%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1399px) {
+  /* section {
+    gap: 10%;
+  } */
+  section aside img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   nav {
     font-family: var(--font-family-quicksand);
@@ -125,5 +178,17 @@ h1.display-1 {
   header p.lead {
     text-align: left;
     font-size: calc(var(--header-paragraph-fs) / 1.5);
+  }
+
+  section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section article {
+    max-width: 100%;
+  }
+  section aside {
+    max-width: 100%;
   }
 }
