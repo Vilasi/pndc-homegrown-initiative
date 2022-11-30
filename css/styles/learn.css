@@ -1,0 +1,73 @@
+:root {
+  --font-family: 'Quattrocento Sans', sans-serif;
+  --font-family-quicksand: 'Quicksand', sans-serif;
+
+  --vibrant-orange: #f06543;
+  --soft-white: #f8f9fa;
+
+  --section-margin-y: 6rem;
+
+  --header-fs: 6.5rem;
+  --header-fs-mobile: calc(var(--header-fs) / 1.5);
+
+  --header-paragraph-fs: 2.2rem;
+  --header-paragraph-fs-mobile: calc(var(--header-paragraph-fs) / 1.5);
+}
+
+html,
+body {
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/***************************** START NAV STYLES *****************************/
+nav {
+  animation: 1s ease-in 0s 1 fadeIn;
+  font-family: var(--font-family-quicksand);
+}
+
+ul.navbar-nav {
+  background-color: var(--soft-white);
+}
+
+.nav-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: var(--soft-white);
+}
+.nav-item a:hover {
+  position: relative;
+  top: 0.1rem;
+}
+.nav-item a:active {
+  position: relative;
+  top: 0.2rem;
+}
+.nav-link:hover {
+  position: relative;
+  top: 5rem;
+}
+.nav-item:nth-of-type(2),
+.nav-item:nth-of-type(3),
+.nav-item:nth-of-type(4),
+.nav-item:nth-of-type(5) {
+  border-left: none;
+}
+
+.navbar-collapse.show,
+.collapsing {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 2px 2px 15px 15px;
+}
+
+.dropdown-menu li:nth-of-type(1) {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.dropdown-menu li:nth-of-type(2) {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+/****************************** END NAV STYLES ******************************/

@@ -16,6 +16,7 @@ html {
 }
 nav {
   animation: 1s ease-in 0s 1 fadeIn;
+  transition: all 1s;
 }
 
 ul.navbar-nav {

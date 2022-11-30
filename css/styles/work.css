@@ -4,6 +4,7 @@
 
   --vibrant-orange: #f06543;
   --soft-white: #f8f9fa;
+
   --desktop-padding-t: 6rem;
   --mobile-padding-X: 1rem;
 
@@ -17,19 +18,11 @@
 html,
 body {
   font-family: var(--font-family);
-  /* scroll-behavior: smooth; */
   scroll-behavior: smooth;
-  /* scroll-snap-type: both; */
   overflow-x: hidden;
-  /* overflow-y: scroll; */
-  /* font-size: 0.5rem; */
 }
 
-/* .overlay { 
-   position: fixed; 
-   overflow-y: scroll;
-   inset: 0; } */
-
+/***************************** START NAV STYLES *****************************/
 nav {
   animation: 1s ease-in 0s 1 fadeIn;
   font-family: var(--font-family-quicksand);
@@ -78,6 +71,7 @@ ul.navbar-nav {
   padding-top: 0.5rem;
   padding-bottom: 1rem;
 }
+/****************************** END NAV STYLES ******************************/
 
 header {
   height: 90vh;
