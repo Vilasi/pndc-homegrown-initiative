@@ -1,6 +1,8 @@
 const c = console.log;
 const cd = console.dir;
 const BUTTONS = document.querySelectorAll('button');
+const emailForm = document.querySelector('#enter-email-for-updates');
+const formInput = document.querySelector('#email-input');
 
 // const workSection = document.querySelector('.diagonal-box-1');
 
@@ -100,3 +102,18 @@ if (window.innerWidth < 624) {
     e.preventDefault();
   });
 }
+
+window.addEventListener('load', (e) => {
+  formInput.value = '';
+});
+
+emailForm.addEventListener('submit', (e) => {
+  // const formInput = document.querySelector('#email-input');
+  console.log(e);
+  e.preventDefault();
+  formInput.value = 'Thank You!';
+  // formInput.placeHolder = 'Im a pippy ';
+  setTimeout(() => {
+    formInput.value = '';
+  }, 2500);
+});

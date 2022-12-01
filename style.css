@@ -423,6 +423,7 @@ form div:nth-of-type(1) {
   text-decoration: none;
   color: #246eb9;
   font-size: 1.2em;
+  /* font-family: var(--font-family-two); */
 }
 
 .footer-list-item span {

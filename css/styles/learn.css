@@ -77,7 +77,7 @@ ul.navbar-nav {
 }
 
 .active {
-  border-bottom: 2px solid var(--dark-blue);
+  border-bottom: 1px solid var(--dark-blue);
 }
 /****************************** END NAV STYLES ******************************/
 

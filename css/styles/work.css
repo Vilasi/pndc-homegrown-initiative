@@ -73,7 +73,7 @@ ul.navbar-nav {
   padding-bottom: 1rem;
 }
 .active {
-  border-bottom: 2px solid var(--dark-blue) !important;
+  border-bottom: 1px solid var(--dark-blue) !important;
 }
 
 /****************************** END NAV STYLES ******************************/
