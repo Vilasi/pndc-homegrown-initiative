@@ -460,7 +460,10 @@ form div:nth-of-type(1) {
 @media only screen and (max-width: 1800px) {
   header {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-      url(./images/landing_placeholder.jpg) scroll center center;
+      url(./images/landing_placeholder.jpg);
+    background-size: cover;
+
+    background-attachment: local;
   }
 
   /* section:nth-of-type(4) {
