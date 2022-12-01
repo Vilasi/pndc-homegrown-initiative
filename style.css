@@ -404,12 +404,15 @@ form div:nth-of-type(1) {
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 4.5rem;
 }
 
 #footerLinkList nav {
   margin: 0;
   margin-top: 1rem;
+
+  /* text-align: center; */
 }
 
 #footerLinkList nav ul li {
@@ -419,7 +422,7 @@ form div:nth-of-type(1) {
 .footer-list-item {
   text-decoration: none;
   color: #246eb9;
-  font-size: 1.5rem;
+  font-size: 1.2em;
 }
 
 .footer-list-item span {
@@ -562,6 +565,10 @@ form div:nth-of-type(1) {
     color: #f8f9fa;
   }
 
+  #footerLinkList {
+    justify-content: center;
+  }
+
   #mobileFooter {
     margin-top: 2rem;
   }
@@ -577,7 +584,7 @@ form div:nth-of-type(1) {
   .footer-list-item {
     color: #f8f9fa;
     text-decoration: underline;
-    font-size: 1.5rem;
+    font-size: 1em;
   }
 }
 
