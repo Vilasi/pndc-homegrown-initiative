@@ -104,6 +104,7 @@
             </li>
           </ul>
         </div>
+        <button id="alert-width">FOR TESTING</button>
       </div>
     </nav>
     <!------------------------------------ END NAV ------------------------------------>
@@ -622,6 +623,13 @@
     </footer>
 
     <script src="../js/bootstrap.bundle.js" async defer></script>
+
+    <script>
+      const DELETETESTBUTTON = document.querySelector('#alert-width');
+      DELETETESTBUTTON.addEventListener('click', (e) => {
+        alert(window.innerWidth);
+      });
+    </script>
 
     <script src="" async defer></script>
   </body>
