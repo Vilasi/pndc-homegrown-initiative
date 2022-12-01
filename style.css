@@ -661,6 +661,7 @@ form div:nth-of-type(1) {
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
+    padding-top: 3rem;
   }
 
   footer > #mobileFooter {
