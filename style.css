@@ -500,10 +500,10 @@ form div:nth-of-type(1) {
   }
 }
 @media only screen and (max-width: 1400px) {
-  section:nth-of-type(4) {
-    /* background: url(./images/windy_road.jpg) scroll 15% 20%; */
-    display: none;
-  }
+  /* section:nth-of-type(4) { */
+  /* background: url(./images/windy_road.jpg) scroll 15% 20%; */
+  /* display: none; */
+  /* } */
 }
 
 @media only screen and (max-width: 1380px) {
@@ -590,9 +590,10 @@ form div:nth-of-type(1) {
     align-items: center;
   }
 
-  section:neth-of-type(4) {
-    background: url(./images/windy_road.jpg) scroll center center;
-
+  section:nth-of-type(4) {
+    /* background: url(./images/windy_road.jpg) scroll center center; */
+    background-size: cover;
+    background-attachment: local;
     /* background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; */

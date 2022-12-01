@@ -176,9 +176,11 @@ footer div a:hover {
 }
 
 @media only screen and (max-width: 1399px) {
-  /* section {
-    gap: 10%;
-  } */
+  header {
+    /* background: url(../../images/stock/books.jpg); */
+    background-size: cover;
+  }
+
   section aside img {
     max-width: 100%;
     height: auto;
