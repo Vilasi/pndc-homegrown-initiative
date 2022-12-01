@@ -463,6 +463,10 @@ form div:nth-of-type(1) {
       url(./images/landing_placeholder.jpg) scroll center center;
   }
 
+  /* section:nth-of-type(4) {
+    background: url(./images/windy_road.jpg) scroll 15% 20%;
+  } */
+
   footer h2 span {
     transform: rotate(0deg);
     bottom: 6rem;
@@ -493,6 +497,12 @@ form div:nth-of-type(1) {
   footer h2 span {
     transform: rotate(0deg);
     bottom: 9rem;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  section:nth-of-type(4) {
+    /* background: url(./images/windy_road.jpg) scroll 15% 20%; */
+    display: none;
   }
 }
 
