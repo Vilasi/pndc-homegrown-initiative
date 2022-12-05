@@ -98,7 +98,7 @@ if (window.innerWidth < 624) {
       left: 0,
       behavior: 'smooth',
     });
-    // window.preventDefault();
+
     e.preventDefault();
   });
 }

@@ -87,18 +87,10 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: var(--soft-white); */
-  /* background: linear-gradient(
-      rgba(248, 249, 250, 0.55),
-      rgba(248, 249, 250, 0.55)
-    ),
-    url(../../images/stock/graduation.jpg); */
+
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url(../../images/stock/live.jpg);
-  /* background-size: contain no-repeat; */
-  /* background-size: stretch; */
-  /* background-attachment: fixed;
-  background-position: 50% 40%; */
+
   background-size: cover;
 
   background-attachment: local;
@@ -122,20 +114,33 @@ h1.display-1 {
   font-weight: 500;
   font-size: var(--header-fs);
 }
+/********************************** END HEADER STYLES **********************************/
+main {
+  font-family: var(--font-family-quicksand);
+  width: 100%;
+  height: auto;
+}
+
+#test {
+  text-decoration: underline 0.05em;
+  /* text-decoration-thickness:  */
+}
+
+section {
+  margin-top: var(--section-margin-y);
+}
 
 @media only screen and (max-width: 992px) {
   nav {
     font-family: var(--font-family-quicksand);
   }
   header {
-    /* align-items: flex-start; */
     background-position: 37% 45%;
   }
   h1.display-1 {
     font-size: calc(var(--header-fs) / 1.5);
   }
   header p.lead {
-    /* text-align: left; */
     font-size: calc(var(--header-paragraph-fs) / 1.5);
   }
 }
