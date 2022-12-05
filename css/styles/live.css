@@ -26,7 +26,6 @@ body {
   background: var(--soft-white);
 }
 
-/***************************** START NAV STYLES *****************************/
 nav {
   animation: 1s ease-in 0s 1 fadeIn;
   font-family: var(--font-family-quicksand);
@@ -94,12 +93,15 @@ header {
       rgba(248, 249, 250, 0.55)
     ),
     url(../../images/stock/graduation.jpg); */
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../../images/stock/graduation.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../../images/stock/live.jpg);
   /* background-size: contain no-repeat; */
   /* background-size: stretch; */
-  background-attachment: fixed;
-  background-position: 50% 40%;
+  /* background-attachment: fixed;
+  background-position: 50% 40%; */
+  background-size: cover;
+
+  background-attachment: local;
   margin-bottom: var(--section-margin-y);
 }
 
@@ -121,74 +123,6 @@ h1.display-1 {
   font-size: var(--header-fs);
 }
 
-main {
-  font-family: var(--font-family-quicksand);
-}
-
-main h2.display-1 {
-  margin-bottom: var(--section-margin-y);
-}
-
-section {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: var(--section-margin-y);
-}
-
-.section-margin-top {
-  margin-top: var(--section-margin-y);
-}
-section article {
-  flex-basis: 1;
-  max-width: 50%;
-  height: auto;
-}
-
-section article a {
-  margin-top: 1.5rem;
-}
-
-section aside {
-  flex-basis: 1;
-  max-width: 50%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-
-section aside img {
-  max-width: 80%;
-  height: auto;
-}
-
-footer {
-  background-color: var(--vibrant-orange);
-}
-footer div:nth-of-type(1) {
-  padding-top: var(--desktop-padding-t);
-  padding-bottom: var(--desktop-padding-t);
-}
-
-footer div a:hover {
-  position: relative;
-  top: 1px;
-}
-
-@media only screen and (max-width: 1399px) {
-  header {
-    /* background: url(../../images/stock/books.jpg); */
-    background-size: cover;
-
-    background-attachment: local;
-  }
-
-  section aside img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
 @media only screen and (max-width: 992px) {
   nav {
     font-family: var(--font-family-quicksand);
@@ -204,28 +138,16 @@ footer div a:hover {
     /* text-align: left; */
     font-size: calc(var(--header-paragraph-fs) / 1.5);
   }
-
-  section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  section article {
-    max-width: 100%;
-  }
-  section aside {
-    max-width: 100%;
-  }
 }
 
 @media only screen and (max-width: 575px) {
   header {
     align-items: flex-start;
-    /* background-position: 37% 45%; */
+    background-position: 37% 45%;
   }
 
   header p.lead {
     text-align: left;
-    /* font-size: calc(var(--header-paragraph-fs) / 1.5); */
+    font-size: calc(var(--header-paragraph-fs) / 1.5);
   }
 }

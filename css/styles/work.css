@@ -262,14 +262,14 @@ footer div a:hover {
   nav {
     font-family: var(--font-family-quicksand);
   }
-  header {
+  /* header {
     align-items: flex-start;
-  }
+  } */
   h1.display-1 {
     font-size: calc(var(--header-fs) / 1.5);
   }
   header p.lead {
-    text-align: left;
+    /* text-align: left; */
     font-size: calc(var(--header-paragraph-fs) / 1.5);
   }
 
@@ -295,4 +295,16 @@ footer div a:hover {
 
 .vis-hidden {
   visibility: hidden;
+}
+
+@media only screen and (max-width: 575px) {
+  header {
+    align-items: flex-start;
+    /* background-position: 37% 45%; */
+  }
+
+  header p.lead {
+    text-align: left;
+    /* font-size: calc(var(--header-paragraph-fs) / 1.5); */
+  }
 }
