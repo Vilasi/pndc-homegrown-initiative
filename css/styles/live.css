@@ -16,6 +16,8 @@
 
   --desktop-padding-t: 6rem;
   --mobile-padding-X: 1rem;
+
+  --aside-padding: 4rem;
 }
 
 html,
@@ -117,6 +119,7 @@ h1.display-1 {
 /********************************** END HEADER STYLES **********************************/
 main {
   font-family: var(--font-family-quicksand);
+  /* font-family: var(--font-family); */
   width: 100%;
   height: auto;
 }
@@ -129,18 +132,29 @@ section {
   text-decoration: underline 0.05em;
 } */
 
-div#content-block {
+div#main-content-block {
   display: flex;
   justify-content: space-around;
   padding-bottom: 6rem;
   padding-top: 3rem;
 }
 
-div#content-block aside {
+div#main-content-block aside {
   flex-basis: 1;
   width: calc(100% / 2.5);
   font-family: var(--font-family);
-  /* background-color: aqua; */
+  margin-bottom: var(--section-margin-y);
+}
+/* div#main-content-block aside:nth-of-type() */
+
+div#main-content-block aside h3 {
+  padding-left: var(--aside-padding);
+  padding-right: var(--aside-padding);
+}
+
+aside div#form-box {
+  padding-left: var(--aside-padding);
+  padding-right: var(--aside-padding);
 }
 
 #state-select-div {
@@ -178,6 +192,22 @@ div#content-block aside {
   }
   header p.lead {
     font-size: calc(var(--header-paragraph-fs) / 1.5);
+  }
+
+  div#main-content-block {
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 6rem;
+    padding-top: 3rem;
+  }
+
+  div#main-content-block aside {
+    flex-basis: 1;
+    width: calc(85%);
+    font-family: var(--font-family);
+    /* background-color: aqua; */
   }
 }
 

@@ -180,15 +180,28 @@
         </h2>
 
         <!---------------------- MAIN CONTENT ---------------------->
-        <div id="content-block">
+        <div id="main-content-block">
           <!-- COST OF LIVING CALCULATOR -->
-          <aside id="cost-of-living-calculator-aside" class="shadow border">
-            <h3 class="display-5 text-center py-3">
+          <aside
+            id="cost-of-living-calculator-aside"
+            class="shadow border rounded"
+          >
+            <!-- <h3 class="display-5 text-center py-3">
+              Cost of Living Calculator
+            </h3> -->
+
+            <h3 class="display-5 text-center py-3 d-none d-xl-block">
               Cost of Living Calculator
             </h3>
-            <div class="container">
-              <form name="job-search-contact-form" class="row g-3 py-5">
-                <div class="col-9">
+            <h3 class="display-6 text-center py-3 d-none d-lg-block d-xl-none">
+              Cost of Living Calculator
+            </h3>
+            <h3 class="display-6 text-start pt-3 d-lg-none">
+              Cost of Living Calculator
+            </h3>
+            <div id="form-box" class="container">
+              <form name="job-search-contact-form" class="row g-2 py-5">
+                <div class="col-xl-8">
                   <label for="firstName" class="form-label"
                     >Your Current City</label
                   >
@@ -202,7 +215,7 @@
                   />
                 </div>
 
-                <div id="state-select-div" class="col-3">
+                <div id="state-select-div" class="col-xl-4">
                   <select class="form-select" aria-label="Select Your State">
                     <option selected>State</option>
                     <option value="1">One</option>
@@ -248,8 +261,14 @@
           </aside>
 
           <!-- NEIGHBORHOOD QUIZ -->
-          <aside class="shadow border">
-            <h3 class="display-4 text-center py-3">
+          <aside class="shadow border rounded">
+            <h3 class="display-5 text-center py-3 d-none d-xl-block">
+              Take the Neighborhood Quiz
+            </h3>
+            <h3 class="display-6 text-center py-3 d-none d-lg-block d-xl-none">
+              Take the Neighborhood Quiz
+            </h3>
+            <h3 class="display-6 text-start pt-3 d-lg-none">
               Take the Neighborhood Quiz
             </h3>
             <div class="container"></div>
