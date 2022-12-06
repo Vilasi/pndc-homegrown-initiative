@@ -205,13 +205,13 @@
               </h3>
               <div id="form-box" class="container">
                 <form name="job-search-contact-form" class="row g-2 py-5">
-                  <div class="col-xl-8">
+                  <div id="currentCity-div" class="col-xl-8">
                     <label for="firstName" class="form-label"
                       >Your Current City</label
                     >
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control userInput"
                       id="currentCity"
                       name="currentCity"
                       placeholder='Eg. "Pittsburgh"'
@@ -219,52 +219,123 @@
                     />
                   </div>
 
-                  <div id="state-select-div" class="col-xl-4">
-                    <select class="form-select" aria-label="Select Your State">
-                      <option selected>State</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
+                  <div id="stateSelect-div" class="col-xl-4">
+                    <select
+                      id="stateSelect"
+                      class="form-select userInput"
+                      aria-label="Select Your State"
+                    >
+                      <option value="al">AL</option>
+                      <option value="ak">AK</option>
+                      <option value="as">AS</option>
+                      <option value="az">AZ</option>
+                      <option value="ar">AR</option>
+                      <option value="ca">CA</option>
+                      <option value="co">CO</option>
+                      <option value="ct">CT</option>
+                      <option value="de">DE</option>
+                      <option value="dc">DC</option>
+                      <option value="fm">FM</option>
+                      <option value="fl">FL</option>
+                      <option value="ga">GA</option>
+                      <option value="gu">GU</option>
+                      <option value="hi">HI</option>
+                      <option value="id">ID</option>
+                      <option value="il">IL</option>
+                      <option value="in">IN</option>
+                      <option value="ia">IA</option>
+                      <option value="ks">KS</option>
+                      <option value="ky">KY</option>
+                      <option value="la">LA</option>
+                      <option value="me">ME</option>
+                      <option value="mh">MH</option>
+                      <option value="md">MD</option>
+                      <option value="ma">MA</option>
+                      <option value="mi">MI</option>
+                      <option value="mn">MN</option>
+                      <option value="ms">MS</option>
+                      <option value="mo">MO</option>
+                      <option value="mt">MT</option>
+                      <option value="ne">NE</option>
+                      <option value="nv">NV</option>
+                      <option value="nh">NH</option>
+                      <option value="nj">NJ</option>
+                      <option value="nm">NM</option>
+                      <option value="ny">NY</option>
+                      <option value="nc">NC</option>
+                      <option value="nd">ND</option>
+                      <option value="mp">MP</option>
+                      <option value="oh">OH</option>
+                      <option value="ok">OK</option>
+                      <option value="or">OR</option>
+                      <option value="pw">PW</option>
+                      <option value="pa">PA</option>
+                      <option value="pr">PR</option>
+                      <option value="ri">RI</option>
+                      <option value="sc">SC</option>
+                      <option value="sd">SD</option>
+                      <option value="tn">TN</option>
+                      <option value="tx">TX</option>
+                      <option value="ut">UT</option>
+                      <option value="vt">VT</option>
+                      <option value="vi">VI</option>
+                      <option value="va">VA</option>
+                      <option value="wa">WA</option>
+                      <option value="wv">WV</option>
+                      <option value="wi">WI</option>
+                      <option value="wy">WY</option>
                     </select>
                   </div>
 
-                  <div class="col-12 py-3">
+                  <div id="mercerCountyCity-div" class="col-12 py-3">
                     <label for="mercerCountyCity" class="form-label"
                       >Which town are you considering?</label
                     >
-                    <!-- <input
-                      type="text"
-                      class="form-control"
-                      id="mercerCountyCity"
-                      name="mercerCountyCity"
-                      placeholder="Smith"
-                      required
-                    /> -->
+
                     <select
                       id="mercerCountyCity"
                       name="mercerCountyCity"
-                      class="form-select"
+                      class="form-select userInput"
                       aria-label="Which town are you considering?"
                     >
-                      <option selected>Hermitage</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
+                      <option value="clark-pa">Clark</option>
+                      <option value="farrell-pa">Farrell</option>
+                      <option value="fredonia-pa">Fredonia</option>
+                      <option value="greenville-pa">Greenville</option>
+                      <option value="grove-city-pa">Grove City</option>
+                      <option value="hermitage-pa">Hermitage</option>
+                      <option value="jackson-center-pa">Jackson Center</option>
+                      <option value="jamestown-pa">Jamestown</option>
+                      <option value="lake-latonka-pa">Lake Latonka</option>
+                      <option value="mercer-pa">Mercer</option>
+                      <option value="new-lebanon-pa">New Lebanon</option>
+                      <option value="reynolds-heights-pa">
+                        Reynolds Heights
+                      </option>
+                      <option value="sandy-lake-pa">Sandy Lake</option>
+                      <option value="sharon-pa">Sharon</option>
+                      <option value="sharpsville-pa">Sharpsville</option>
+                      <option value="sheakleyville-pa">Sheakleyville</option>
+                      <option value="stoneboro-pa">Stoneboro</option>
+                      <option value="west-middlesex-pa">West Middlesex</option>
+                      <option value="wheatland-pa">Wheatland</option>
                     </select>
                   </div>
-                  <div class="col-12 pb-3">
-                    <label for="email" class="form-label">Current Salary</label>
+                  <div id="salary-div" class="col-12 pb-3">
+                    <label for="salary" class="form-label"
+                      >Current Salary</label
+                    >
                     <input
                       type="number"
-                      class="form-control"
+                      class="form-control userInput"
                       id="salary"
                       name="salary"
-                      placeholder="Eg. $45,000"
+                      placeholder="Eg. 45000"
                       required
                     />
                   </div>
 
-                  <div class="col-12">
+                  <div id="submit-div" class="col-12">
                     <button
                       id="form-submit-button"
                       type="submit"

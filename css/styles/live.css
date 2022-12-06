@@ -208,7 +208,7 @@ aside div#form-box {
   padding-right: var(--aside-padding);
 }
 
-#state-select-div {
+#stateSelect-div {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

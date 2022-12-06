@@ -1,23 +1,40 @@
-// https://www.bestplaces.net/cost-of-living/sharon-pa/hermitage-pa/30000
-// const c = console.log;
-
-// const form = document.querySelector('form');
-
-// form.addEventListener('submit', (e) => {
-//   e.preventDefault();
-
-//   const children = e.target.children;
-//   const valueArray = [];
-//   for (let child of children) {
-//     if (child.classList.contains('input')) {
-//       console.log(child.value);
-//       valueArray.push(child.value);
-//     }
+// function printSelect(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     console.log(
+//       `<option value="${arr[i].toLowerCase()}">${arr[i]}</option>`
+//     );
 //   }
-//   console.log(valueArray);
+// }
 
-//   window.location.href = `https://www.bestplaces.net/cost-of-living/${valueArray[0]}/${valueArray[1]}/${valueArray[2]}`;
-// });
+const FORM = document.querySelector('form');
 
-//////////////////// KEEP THE ABOVE
-//////////////////// THIS IS THE BASIS FOR THE COST OF LIVING CALCULATOR COMMANDEERING SCRIPT
+FORM.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const userInputs = makeRequest(e.target.children);
+  //   Example Output: [ "jezebel ", "ca", "clark-pa", "45000" ]
+  window.location.href = `https://www.bestplaces.net/cost-of-living/${userInputs[0]}-${userInputs[1]}/${userInputs[2]}/${userInputs[3]}`;
+});
+
+function makeRequest(children) {
+  const valueArray = [];
+  for (let child of children) {
+    for (let el of child.children) {
+      if (el.classList.contains('userInput')) {
+        valueArray.push(el.value);
+      }
+    }
+  }
+
+  valueArray[0] = lowerCase(valueArray[0]);
+  valueArray[0] = replaceWhiteSpace(valueArray[0]);
+
+  return valueArray;
+}
+
+function lowerCase(str) {
+  return str.toLowerCase();
+}
+
+function replaceWhiteSpace(str) {
+  return str.replace(/ /g, '-');
+}
