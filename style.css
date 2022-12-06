@@ -68,6 +68,8 @@ header {
 
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
     url(./images/landing_placeholder.jpg) no-repeat center center fixed;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(./images/meta/paper-map-larger.jpg) no-repeat center center fixed; */
   /* filter: brightness(50%); */
   /* background-blend-mode: darken; */
   /* background: url(./images/buhl_kite_field.png) no-repeat center -190px fixed; */
@@ -78,6 +80,10 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  /* background-size: cover;
+
+  background-attachment: local; */
 }
 
 /* header::after {

@@ -175,10 +175,85 @@
 
     <main>
       <section class="shadow-lg container rounded">
-        <h2 id="test" class="display-1 text-center pt-4">See For Yourself</h2>
-        <div>
-          <aside></aside>
-          <aside></aside>
+        <h2 id="h2-underline" class="display-1 text-center py-4">
+          See For Yourself
+        </h2>
+
+        <!---------------------- MAIN CONTENT ---------------------->
+        <div id="content-block">
+          <!-- COST OF LIVING CALCULATOR -->
+          <aside id="cost-of-living-calculator-aside" class="shadow border">
+            <h3 class="display-5 text-center py-3">
+              Cost of Living Calculator
+            </h3>
+            <div class="container">
+              <form name="job-search-contact-form" class="row g-3 py-5">
+                <div class="col-9">
+                  <label for="firstName" class="form-label"
+                    >Your Current City</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="currentCity"
+                    name="currentCity"
+                    placeholder='Eg. "Pittsburgh"'
+                    required
+                  />
+                </div>
+
+                <div id="state-select-div" class="col-3">
+                  <select class="form-select" aria-label="Select Your State">
+                    <option selected>State</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    name="last-name"
+                    placeholder="Smith"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="name@site.com"
+                    required
+                  />
+                </div>
+
+                <div class="col-12">
+                  <button
+                    id="form-submit-button"
+                    type="submit"
+                    class="btn btn-primary btn-lg"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </aside>
+
+          <!-- NEIGHBORHOOD QUIZ -->
+          <aside class="shadow border">
+            <h3 class="display-4 text-center py-3">
+              Take the Neighborhood Quiz
+            </h3>
+            <div class="container"></div>
+          </aside>
         </div>
       </section>
     </main>
