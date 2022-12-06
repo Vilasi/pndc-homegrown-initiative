@@ -135,7 +135,7 @@ section {
 div#main-content-block {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 6rem;
+  padding-bottom: 5.5rem;
   padding-top: 3rem;
 }
 
@@ -145,7 +145,58 @@ div#main-content-block aside {
   font-family: var(--font-family);
   margin-bottom: var(--section-margin-y);
 }
-/* div#main-content-block aside:nth-of-type() */
+div#main-content-block aside:nth-of-type(1) {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.55),
+      rgba(255, 255, 255, 0.55)
+    ),
+    url(../../images/stock/calc-2.jpg);
+  background-size: contain;
+  background-attachment: local;
+}
+div#main-content-block aside:nth-of-type(2) {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.55),
+      rgba(255, 255, 255, 0.55)
+    ),
+    url(../../images/meta/paper-map-larger.jpg);
+  background-size: contain;
+  background-attachment: local;
+  /* display: flex;
+  align-items: flex-start;
+  justify-content: center; */
+}
+
+/* #neighborhood-quiz {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+} */
+
+.blur-box {
+  backdrop-filter: blur(1px);
+  height: 100%;
+  width: 100%;
+}
+
+#blue-box-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#blue-box-two h3 {
+  margin-bottom: auto;
+}
+
+#neighborhood-quiz-button {
+  /* justify-items: center; */
+  margin-bottom: auto;
+  /* max-width: 10rem; */
+  position: relative;
+  bottom: 10%;
+}
 
 div#main-content-block aside h3 {
   padding-left: var(--aside-padding);
@@ -208,6 +259,10 @@ aside div#form-box {
     width: calc(85%);
     font-family: var(--font-family);
     /* background-color: aqua; */
+  }
+
+  div#main-content-block aside:nth-of-type(2) {
+    height: 480px;
   }
 }
 
