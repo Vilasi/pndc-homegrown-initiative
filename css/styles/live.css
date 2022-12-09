@@ -127,7 +127,7 @@ section {
   margin-bottom: var(--section-margin-y);
 }
 
-#h2-header-block {
+.h2-header-block {
   display: flex;
   flex-direction: column;
   align-items: center;
