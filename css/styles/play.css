@@ -1,0 +1,146 @@
+:root {
+  --font-family: 'Quattrocento Sans', sans-serif;
+  --font-family-quicksand: 'Quicksand', sans-serif;
+
+  --vibrant-orange: #f06543;
+  --soft-white: #f8f9fa;
+  --dark-blue: #0d1b2a;
+
+  --section-margin-y: 6rem;
+
+  --header-fs: 6.5rem;
+  --header-fs-mobile: calc(var(--header-fs) / 1.5);
+
+  --header-paragraph-fs: 2.2rem;
+  --header-paragraph-fs-mobile: calc(var(--header-paragraph-fs) / 1.5);
+
+  --desktop-padding-t: 6rem;
+  --mobile-padding-X: 1rem;
+
+  --character-limit: 60ch;
+
+  --aside-padding: 4rem;
+}
+
+html,
+body {
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background: var(--soft-white);
+}
+
+nav {
+  animation: 1s ease-in 0s 1 fadeIn;
+  font-family: var(--font-family-quicksand);
+}
+
+ul.navbar-nav {
+  background-color: var(--soft-white);
+}
+
+.nav-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: var(--soft-white);
+}
+.nav-item a:hover {
+  position: relative;
+  top: 0.1rem;
+}
+.nav-item a:active {
+  position: relative;
+  top: 0.2rem;
+}
+.nav-link:hover {
+  position: relative;
+  top: 5rem;
+}
+.nav-item:nth-of-type(2),
+.nav-item:nth-of-type(3),
+.nav-item:nth-of-type(4),
+.nav-item:nth-of-type(5) {
+  border-left: none;
+}
+
+.navbar-collapse.show,
+.collapsing {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 2px 2px 15px 15px;
+}
+
+.dropdown-menu li:nth-of-type(1) {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.dropdown-menu li:nth-of-type(2) {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.active {
+  border-bottom: 1px solid var(--dark-blue);
+}
+/****************************** END NAV STYLES ******************************/
+
+header {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(../../images/reservoir.png);
+  background-size: cover;
+  background-attachment: local;
+  margin-bottom: var(--section-margin-y);
+}
+
+header h1,
+p {
+  position: relative;
+  top: 1rem;
+}
+
+header p.lead {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: var(--header-paragraph-fs);
+  text-align: center;
+}
+
+h1.display-1 {
+  font-weight: 500;
+  font-size: var(--header-fs);
+}
+/********************************** END HEADER STYLES **********************************/
+
+@media only screen and (max-width: 992px) {
+  nav {
+    font-family: var(--font-family-quicksand);
+  }
+  header {
+    background-position: 37% 45%;
+  }
+  h1.display-1 {
+    font-size: calc(var(--header-fs) / 1.5);
+  }
+  header p.lead {
+    font-size: calc(var(--header-paragraph-fs) / 1.5);
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  header {
+    align-items: flex-start;
+    background-position: 37% 45%;
+  }
+
+  header p.lead {
+    text-align: left;
+    font-size: calc(var(--header-paragraph-fs) / 1.5);
+  }
+}
