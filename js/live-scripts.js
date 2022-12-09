@@ -38,3 +38,67 @@ function lowerCase(str) {
 function replaceWhiteSpace(str) {
   return str.replace(/ /g, '-');
 }
+
+// The Final Card Creation
+
+// `<div class="card m-2" style="width: 18rem">
+//   <div class="card-body">
+//     <h5 class="card-title">Grove City Medical Center</h5>
+//     <p class="card-text">
+//       66<span>%</span> of patients would definitely recommend.
+//     </p>
+//   </div>
+//   <ul class="list-group list-group-flush">
+//     <li class="list-group-item">631 N Broad Street Ext</li>
+//     <li class="list-group-item">Grove City, PA 16127</li>
+//   </ul>
+//   <div class="card-body d-flex align-items-center">
+//     <a
+//       href="https://www.healthgrades.com/hospital-directory/pennsylvania-pa/grove-city-medical-center-hgsta96ae6a6390266"
+//       class="card-link"
+//       >View Information</a
+//     >
+//   </div>
+// </div>`
+
+console.log(unorderedList);
+
+// const cardName = document.querySelectorAll('.card-name');
+// console.log(cardName);
+
+const unorderedList = document.querySelector('.results__results-cards');
+let finalString = '';
+for (let i = 0; i < unorderedList.children.length; i++) {
+  finalString += `<div class='card m-2' style='width: 18rem'>
+  <div class='card-body'>
+    <h5 class='card-title'>${
+      unorderedList.children[i].querySelector('.card-name a').textContent
+    }</h5>
+    <p class='card-text'>
+      ${
+        unorderedList.children[i].querySelector(
+          '.facility-card__patient-satisfaction'
+        ).textContent
+      }
+    </p>
+  </div>
+  <ul class='list-group list-group-flush'>
+    <li class='list-group-item'>${
+      unorderedList.children[i].querySelector('.location-info-address__address')
+        .textContent
+    }</li>
+    <li class='list-group-item'>${
+      unorderedList.children[i].querySelector(
+        '.location-info-address__city-state'
+      ).textContent
+    }</li>
+  </ul>
+  <div class='card-body d-flex align-items-center'>
+    <a
+      href='${unorderedList.children[i].querySelector('.card-name a').href}'
+      class='card-link'
+      >View Information</a
+    >
+  </div>
+</div>`;
+}
