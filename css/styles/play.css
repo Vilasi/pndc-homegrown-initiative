@@ -126,9 +126,25 @@ main {
   
 } */
 
-#test {
-  margin: 0;
-  padding: 0;
+#last-section {
+  /* margin-bottom: var(--section-margin-y); */
+  margin-right: 0;
+  padding-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+footer {
+  background-color: var(--vibrant-orange);
+}
+footer div:nth-of-type(1) {
+  padding-top: var(--desktop-padding-t);
+  padding-bottom: var(--desktop-padding-t);
+}
+
+footer div a:hover {
+  position: relative;
+  top: 1px;
 }
 /********************************** END HEADER STYLES **********************************/
 
