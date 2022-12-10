@@ -146,9 +146,9 @@ main {
   header p.lead {
     font-size: calc(var(--header-paragraph-fs) / 1.5);
   }
-  .mobile-padding {
+  /* .mobile-padding {
     padding-bottom: 1.5rem;
-  }
+  } */
 }
 
 @media only screen and (max-width: 575px) {
