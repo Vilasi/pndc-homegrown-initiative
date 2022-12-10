@@ -116,6 +116,20 @@ h1.display-1 {
   font-weight: 500;
   font-size: var(--header-fs);
 }
+
+main {
+  font-family: var(--font-family-quicksand);
+}
+
+/* section {
+  height: 60vh;
+  
+} */
+
+#test {
+  margin: 0;
+  padding: 0;
+}
 /********************************** END HEADER STYLES **********************************/
 
 @media only screen and (max-width: 992px) {
@@ -124,12 +138,16 @@ h1.display-1 {
   }
   header {
     background-position: 37% 45%;
+    margin-bottom: 1.5rem;
   }
   h1.display-1 {
     font-size: calc(var(--header-fs) / 1.5);
   }
   header p.lead {
     font-size: calc(var(--header-paragraph-fs) / 1.5);
+  }
+  .mobile-padding {
+    padding-bottom: 1.5rem;
   }
 }
 
