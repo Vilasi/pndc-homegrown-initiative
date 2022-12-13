@@ -118,6 +118,22 @@ h1.display-1 {
   font-size: var(--header-fs);
 }
 
+.vertical-rule-height {
+  height: 40rem;
+}
+
+.vr {
+  background-color: black !important;
+}
+
+.quicksand {
+  font-family: var(--font-family-quicksand);
+}
+
+.ch-limit {
+  max-width: var(--character-limit);
+}
+
 @media only screen and (max-width: 992px) {
   header {
     /* background-position: center; */
