@@ -134,6 +134,12 @@ h1.display-1 {
   max-width: var(--character-limit);
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  margin-bottom: 5rem !important;
+  margin-top: 5rem !important;
+}
+
 @media only screen and (max-width: 992px) {
   header {
     /* background-position: center; */
