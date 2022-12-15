@@ -151,4 +151,8 @@ h1.display-1 {
   h1.display-1 {
     font-size: calc(var(--header-fs) / 1.5);
   }
+
+  .vertical-rule-height {
+    height: 20rem;
+  }
 }
