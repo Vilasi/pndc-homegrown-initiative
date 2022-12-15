@@ -143,9 +143,10 @@ h1.display-1 {
 @media only screen and (max-width: 992px) {
   header {
     /* background-position: center; */
-    background-attachment: fixed;
-    background-position: 70% 70%;
+    /* background-attachment: fixed; */
+    background-position: 70% 50%;
     /* background-position: 475% 30%; */
+    background-size: cover;
   }
 
   h1.display-1 {
