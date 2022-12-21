@@ -82,6 +82,7 @@ ul.navbar-nav {
 .active {
   border-bottom: 1px solid var(--dark-blue);
 }
+
 /****************************** END NAV STYLES ******************************/
 
 header {
@@ -138,6 +139,14 @@ h1.display-1 {
 .carousel-control-next {
   margin-bottom: 5rem !important;
   margin-top: 5rem !important;
+}
+
+.carousel-item.active {
+  border-bottom: none;
+}
+
+.img-max-height {
+  max-height: 646px;
 }
 
 @media only screen and (max-width: 992px) {
