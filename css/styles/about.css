@@ -149,6 +149,27 @@ h1.display-1 {
   max-height: 646px;
 }
 
+.section-margin-top {
+  margin-top: var(--section-margin-y);
+}
+
+.section-margin-bottom {
+  margin-bottom: var(--section-margin-y);
+}
+
+footer {
+  background-color: var(--vibrant-orange);
+}
+footer div:nth-of-type(1) {
+  padding-top: var(--desktop-padding-t);
+  padding-bottom: var(--desktop-padding-t);
+}
+
+footer div a:hover {
+  position: relative;
+  top: 1px;
+}
+
 @media only screen and (max-width: 992px) {
   header {
     /* background-position: center; */
