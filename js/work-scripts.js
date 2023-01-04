@@ -80,9 +80,9 @@ if (window.innerWidth > 992) {
             '#one',
             0.01
           );
-          const schools = new Iterator(7, '#two', 250);
+          const schools = new Iterator(6, '#two', 250);
           const jobOpenings = new Iterator(
-            pickNumberRange(7800, 7900, 7829),
+            pickNumberRange(2000, 3000, 2395),
             '#three',
             25
           );
