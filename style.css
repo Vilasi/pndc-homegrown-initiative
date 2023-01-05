@@ -5,6 +5,8 @@
   --header-font-size: 7.5rem;
 
   --soft-white: #f8f9fa;
+
+  --60-characters: 60ch;
 }
 
 html {
@@ -388,6 +390,10 @@ form div:nth-of-type(1) {
   color: #f8f9fa;
 }
 
+/* .ch-60 {
+  max-width: var(--60-characters);
+} */
+
 /* .btn-outline */
 /*********************************** @Media Queries *************************************/
 /*********************************** @Media Queries *************************************/
@@ -601,6 +607,36 @@ form div:nth-of-type(1) {
   .footer-anchor-nav-scrollIn {
     margin-bottom: 1.5rem;
   }
+}
+
+@media only screen and (max-width: 992px) {
+  .custom-text-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ch-60 {
+    max-width: var(--60-characters) !important;
+  }
+  .marg-up {
+    margin-top: 2rem;
+  }
+
+  /* .flexy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  .deskewed-box-work-section div,
+  .deskewed-box-amenities-section div,
+  .deskewed-box-live-section div {
+    max-width: 100%;
+  }
+
+  /* .container {
+  } */
 }
 
 @media only screen and (max-width: 700px) {
