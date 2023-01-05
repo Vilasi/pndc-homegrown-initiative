@@ -121,6 +121,17 @@ main {
   font-family: var(--font-family-quicksand);
 }
 
+.section-margin {
+  margin-top: var(--section-margin-y);
+  margin-bottom: var(--section-margin-y);
+}
+
+#event-img {
+  height: 300px;
+  max-width: auto;
+  object-fit: cover;
+}
+
 /* section {
   height: 60vh;
   
@@ -177,4 +188,11 @@ footer div a:hover {
     text-align: left;
     font-size: calc(var(--header-paragraph-fs) / 1.5);
   }
+}
+
+.font-family-1 {
+  font-family: var(--font-family-quicksand);
+}
+.font-family-2 {
+  font-family: var(--font-family);
 }
