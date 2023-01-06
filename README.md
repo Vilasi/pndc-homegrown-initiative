@@ -14,11 +14,15 @@ The Penn-Northwest Homegrown Initiative is a local nonprofit dedicated to improv
 
 This site constitutes my first foray into the world of freelance web development - that is, the first project I've built for someone other than friends and family! The tech used is entirely vanilla HTML, CSS and JS (not counting the Bootstrap framework).
 
-Primarily this is a static site, composed of 6 main HTML pages, each of which serving the purpose of elucidating some part of the local community to the user. The landing index.html was the greatest challenge of the entire site. As the user scrolls down on desktop they'll find distinct sections that work as calls to action to each of the other pages on the site. Each of these sections contain a series of overlayed Divs - each of which with varying skew, transform, and styling rules that in sum total create a cool modern diagonal effect.
+Primarily this is a static site, composed of 6 main HTML pages, each of which serving the purpose of elucidating some part of the local community to the user. The landing index.html was the greatest challenge of the entire site. As the user scrolls down on desktop they'll find distinct sections that work as calls to action to each of the other pages on the site. Each section contains a series of overlayed Divs - each of which with varying skew, transform, and styling rules that in sum total create a cool modern diagonal effect. The actual content of the divs are layed out using Flexbox (_love_ Flexbox).
 
-_Check it out!_
+<!-- _Check it out!_ -->
+
 ![Project Landing Page Diagonal Skew](https://i.imgur.com/4dtKHbX.png)
 ![Project Landing Page Diagonal Skew](https://i.imgur.com/K8BPdxZ.png)
+
+This is followed by a basic parallax-effect background image section and then the footer, wherein the user finds a form allowing the user to enter their email to join a mailing list, and a sitemap nav.
+![Project Landing Page Footer](https://i.imgur.com/fiIrBri.png)
 
 ## Optimizations
 
