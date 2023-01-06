@@ -1,112 +1,42 @@
-# pndc-homegrown-initiative
+# The Penn-Northwest Homegrown Initiative's: Homegrown Mercer County Website
 
-<h1 align="center">Penn-Northwest Homegrown Initiative</h1>
+Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
+The Penn-Northwest Homegrown Initiative is a local nonprofit dedicated to improving the lives of people in Western Pennsylvanian community of Mercer County. This project is their website - the main functionality of which is helping people find work, homes, schools, activities, and community in the area.
 
-<p align="center">
-  <a href="https://materializecss.github.io/materialize/">
-    <img src="https://static.wixstatic.com/media/b534f1_62798cc0e7ea4c12802be0a93d46dd99~mv2.png/v1/crop/x_146,y_109,w_221,h_279/fill/w_309,h_372,al_c,lg_1,q_85,enc_auto/Homegrown.png" width="150">
-  </a>
-</p>
+**Link to project:** http://www.homegrownmc.com/
 
-<h3 align="center">PNDC Home Grown</h3>
+![Project Landing Page](https://i.imgur.com/WJWiRjX.png)
 
-<p align="center">
-  Built with the Materialize CSS Framework - An Open Source Framework Maintained and Developed by the GitHub Community.
-  <br>
-  <a href="https://materializecss.github.io/materialize/"><strong>-- Browse the docs --</strong></a>
-  <br>
-  <br>
-  <a href="https://github.com/materializecss/materialize/actions/">
-    <img src="https://github.com/materializecss/materialize/actions/workflows/nightly.yml/badge.svg" alt="GitHub Actions badge">
-  </a>
-  <a href="https://www.npmjs.com/package/@materializecss/materialize">
-    <img src="https://badge.fury.io/js/%40materializecss%2Fmaterialize.svg" alt="npm version badge">
-  </a>
-  <a href="https://www.jsdelivr.com/package/npm/@materializecss/materialize">
-    <img src="https://data.jsdelivr.com/v1/package/npm/@materializecss/materialize/badge" alt="jsDelivr version badge">
-  </a>
-  <a href="https://david-dm.org/materializecss/materialize">
-    <img src="https://david-dm.org/materializecss/materialize/status.svg" alt="dependencies Status badge">
-    </a>
-  <a href="https://david-dm.org/materializecss/materialize#info=devDependencies">
-    <img src="https://david-dm.org/materializecss/materialize/dev-status.svg" alt="devDependency Status badge">
-  </a>
-  <a href="https://gitter.im/materializecss/materialize">
-    <img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter badge">
-  </a>
-</p>
+## How It's Made:
 
-## Table of Contents
+**Tech used:** HTML, CSS, JavaScript, Bootstrap v5.2, Netlify Hosting
 
-- [Quickstart](#quickstart)
-- [Documentation](#documentation)
-- [Build](#build)
-- [Supported Browsers](#supported-browsers)
-- [Changelog](#changelog)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [Copyright and license](#copyright-and-license)
+This site constitutes my first foray into the world of freelance web development - that is, the first project I've built for someone other than friends and family! The tech used is entirely vanilla HTML, CSS and JS (not counting the Bootstrap framework).
 
-## Quickstart:
+Primarily this is a static site, composed of 6 main HTML pages, each of which serving the purpose of elucidating some part of the local community to the user. The landing index.html was the greatest challenge of the entire site. As the user scrolls down on desktop they'll find distinct sections that work as calls to action to each of the other pages on the site. Each of these sections contain a series of overlayed Divs - each of which with varying skew, transform, and styling rules that in sum total create a cool modern diagonal effect.
 
-Read the [getting started guide](https://materializecss.github.io/materialize/getting-started.html) for more information on how to use materialize.
+_Check it out!_
+![Project Landing Page Diagonal Skew](https://i.imgur.com/4dtKHbX.png)
+![Project Landing Page Diagonal Skew](https://i.imgur.com/K8BPdxZ.png)
 
-- [Download the latest release](https://github.com/materializecss/materialize/releases/latest) of materialize directly from GitHub. ([Beta](https://github.com/materializecss/materialize/releases/))
-- Clone the repo: `git clone https://github.com/materializecss/materialize.git`
-- Include the files via [jsDelivr](https://www.jsdelivr.com/package/npm/@materializecss/materialize).
-- Install with [npm](https://www.npmjs.com): `npm install @materializecss/materialize` (Beta: `npm install @materializecss/materialize@next`)
+Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write _something_. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
 
-## Documentation
+## Optimizations
 
-The documentation can be found at <https://materializecss.github.io/materialize>. To run the documentation locally on your machine, you need [Node.js](https://nodejs.org/en/) installed on your computer.
+_(optional)_
 
-### Running documentation locally
+You don't have to include this section but interviewers _love_ that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
 
-Run these commands to set up the documentation:
+## Lessons Learned:
 
-```bash
-git clone https://github.com/materializecss/materialize
-cd materialize
-npm install
-```
+No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those _whoa this is awesome_ or _fuck yeah I did it!_ moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
 
-Then run `npm run dev` to compile the documentation. When it finishes, open a new browser window and navigate to `localhost:8000/docs`. We use [BrowserSync](https://www.browsersync.io/) to display the documentation.
+## Examples:
 
-### Documentation for previous releases
+Take a look at these couple examples that I have in my own portfolio:
 
-Previous releases and their documentation are available for [download](https://github.com/materializecss/materialize/releases).
+**Palettable:** https://github.com/alecortega/palettable
 
-## Build
+**Twitter Battle:** https://github.com/alecortega/twitter-battle
 
-If you want to build `materialize.css` or `materialize.js` from the latest commit, you can build the files with the following command after `npm install`. See `package.json` to check the current version like `1.0.0`.
-
-```sh
-npm run release -- --oldver=<current_version> --newver=<new_version>
-```
-
-## Supported Browsers:
-
-Materialize is compatible with:
-
-- Chrome 35+
-- Firefox 31+
-- Safari 9+
-- Opera
-- Edge
-- IE 11+
-
-## Changelog
-
-For changelogs, check out [the Releases section of materialize](https://github.com/materializecss/materialize/releases) or the [CHANGELOG.md](CHANGELOG.md).
-
-## Testing
-
-We use Jasmine as our testing framework and we're trying to write a robust test suite for our components. If you want to help, [here's a starting guide on how to write tests in Jasmine](CONTRIBUTING.md#jasmine-testing-guide).
-
-## Contributing
-
-Check out the [CONTRIBUTING document](CONTRIBUTING.md) in the root of the repository to learn how you can contribute. You can also browse the [help-wanted](https://github.com/materializecss/materialize/labels/help-wanted) tag in our issue tracker to find things to do.
-
-## Copyright and license
-
-Code Copyright 2021 Materialize. Code released under the MIT license.
+**Patch Panel:** https://github.com/alecortega/patch-panel
