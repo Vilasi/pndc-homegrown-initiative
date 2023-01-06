@@ -176,15 +176,6 @@ footer div a:hover {
   top: 1px;
 }
 #dev-signature-div {
-  /* position: relative; */
-  /* bottom: 0; */
-  /* position: fixed; */
-  /* flex-direction: column; */
-
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -194,14 +185,10 @@ footer div a:hover {
 
   height: 3.5rem;
   background-color: var(--dark-coffee);
-  /* background-color: var(--footer-color-1); */
-  color: var(--soft-white);
-  /* color: var(--dark-blue); */
-  /* font-family: var(--font-family-quicksand); */
-  font-family: var(--font-family-quicksand);
 
-  /* padding-top: 0;
-  padding-bottom: 0; */
+  color: var(--soft-white);
+
+  font-family: var(--font-family-quicksand);
 }
 
 #dev-signature-div p {
@@ -209,15 +196,10 @@ footer div a:hover {
   margin-bottom: 0;
 }
 
-#dev-signature-div a {
-  /* color: var(--dark-blue) !important; */
-}
-
 @media only screen and (max-width: 992px) {
   header {
-    /* background-position: center; */
-    /* background-attachment: fixed; */
     background-position: 70% 50%;
+    /* The below line is reference */
     /* background-position: 475% 30%; */
     background-size: cover;
   }
