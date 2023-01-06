@@ -35,6 +35,13 @@ Below this is a Contact form. This allows the user to put in information that is
 
 ![Project work Page](./images/gif/gif-3.gif)
 
+The next pages are more or less your standard web content pages. The Live page has a fully-functional Cost of Living Calculator, using 3rd party tool and restyled on the page to essentially function as an impromptu api call. As well the Live page has a "Find your Neighborhood Quiz" - essentially a game utilizing HTML, CSS, and JS to make a fun interactive experience for the user all while helping them find which neighborhood in Mercer County they may best enjoy!
+
+![Project continued pages](./images/gif/gif-4.gif)
+![Project continued pages](./images/gif/gif-5.gif)
+![Project continued pages](./images/gif/gif-6.gif)
+![Project continued pages](./images/gif/gif-7.gif)
+
 ## Optimizations
 
 _(optional)_
