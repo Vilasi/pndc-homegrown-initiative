@@ -1,4 +1,4 @@
-# The Penn-Northwest Homegrown Initiative's: Homegrown Mercer County Website
+# The Penn-Northwest Homegrown Initiative's: Homegrown Mercer County
 
 The Penn-Northwest Homegrown Initiative is a local nonprofit dedicated to improving the lives of people in Western Pennsylvanian community of Mercer County. This project is their website - the main functionality of which is helping people find work, homes, schools, activities, and community in the area.
 
@@ -22,7 +22,11 @@ Primarily this is a static site, composed of 6 main HTML pages, each of which se
 ![Project Landing Page Diagonal Skew](https://i.imgur.com/K8BPdxZ.png)
 
 This is followed by a basic parallax-effect background image section and then the footer, wherein the user finds a form allowing the user to enter their email to join a mailing list, and a sitemap nav.
+
 ![Project Landing Page Footer](https://i.imgur.com/fiIrBri.png)
+
+After this, the rest of the pages follow a similar flavor: A large heading with a header and tag line, followed by the relative content.
+![Project Landing Page Footer](./images/gif/gif-2.gif)
 
 ## Optimizations
 
