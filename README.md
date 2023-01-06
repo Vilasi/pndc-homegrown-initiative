@@ -25,8 +25,15 @@ This is followed by a basic parallax-effect background image section and then th
 
 ![Project Landing Page Footer](https://i.imgur.com/fiIrBri.png)
 
-After this, the rest of the pages follow a similar flavor: A large heading with a header and tag line, followed by the relative content.
-![Project Landing Page Footer](./images/gif/gif-2.gif)
+After this, the rest of the pages follow a similar flavor: A large heading with a header and tag line, followed by the relevant content.
+
+![Project Pages](./images/gif/gif-2.gif)
+
+The work page contains some of the more complicated JS scripts on the site. Most prominent to the user is the Salary/College/Job Openings animation. This effect is accomplished through an OOP Class oriented approach and the Intersection Observer API. When an Intersection is observed, a new class object is created. This class is fed the relevant data (Average salary, job openings - data provided by client) and a setInterval function is ran. Through what is essentially a stopwatch of varying numerical steps, the desired value is reached. As the iterator approaches the value, the number by which the iterator jumps lessens, thereby, in effect, slowing down the animation. As the value comes nearest the final value, the iterator starts incrementing by 1, until finally the value is reached and the interval is cleared - ending the animation.
+
+Below this is a Contact form. This allows the user to put in information that is forwarded to the client, who uses it to get in contact with the user and thereby help them find work. This uses Netlify's form handling tech to scour the form and extract relevant data, constricting an Email to send to any specified parties.
+
+![Project work Page](./images/gif/gif-3.gif)
 
 ## Optimizations
 
