@@ -3,8 +3,14 @@
   --font-family-quicksand: 'Quicksand', sans-serif;
 
   --vibrant-orange: #f06543;
+  --footer-color-1: #51a3a3;
+  --footer-color-2: #a8dadc;
+  --footer-color-3: #258ea6;
+  --footer-color-4: #f7dba7;
+  --footer-color-5: #f4f4ed;
   --soft-white: #f8f9fa;
   --dark-blue: #0d1b2a;
+  --dark-coffee: #362c28;
 
   --section-margin-y: 6rem;
 
@@ -169,6 +175,43 @@ footer div a:hover {
   position: relative;
   top: 1px;
 }
+#dev-signature-div {
+  /* position: relative; */
+  /* bottom: 0; */
+  /* position: fixed; */
+  /* flex-direction: column; */
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.1rem;
+  padding-bottom: 2.1rem;
+
+  height: 3.5rem;
+  background-color: var(--dark-coffee);
+  /* background-color: var(--footer-color-1); */
+  color: var(--soft-white);
+  /* color: var(--dark-blue); */
+  /* font-family: var(--font-family-quicksand); */
+  font-family: var(--font-family-quicksand);
+
+  /* padding-top: 0;
+  padding-bottom: 0; */
+}
+
+#dev-signature-div p {
+  position: static;
+  margin-bottom: 0;
+}
+
+#dev-signature-div a {
+  /* color: var(--dark-blue) !important; */
+}
 
 @media only screen and (max-width: 992px) {
   header {
@@ -185,5 +228,20 @@ footer div a:hover {
 
   .vertical-rule-height {
     height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #dev-signature-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #dev-signature-div p {
+    font-size: 0.85em;
+  }
+  #dev-signature-div a {
+    font-size: 1em;
   }
 }
