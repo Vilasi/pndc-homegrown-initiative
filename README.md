@@ -42,6 +42,10 @@ The next pages are more or less your standard web content pages. The Live page h
 ![Project continued pages](./images/gif/gif-6.gif)
 ![Project continued pages](./images/gif/gif-7.gif)
 
+..._whew!_
+
+Looking over everything, this has been quite the project!
+
 ## Optimizations
 
 _(optional)_
