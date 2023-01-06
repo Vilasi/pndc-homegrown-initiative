@@ -116,7 +116,7 @@ if (window.innerWidth > 992) {
   }
 }
 
-// function that generates a number between its first parameter and its second parameter
+// function that generates a number between min and max
 function randomNum(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -199,10 +199,9 @@ function setHref(id) {
   }
 }
 
-// console.log(imageLinks);
+// Sets an href and links to the specified url
 imageLinks.addEventListener('click', (e) => {
   console.log('Click!!!');
-  // console.log(e.target.id);
   setHref(e.target.id);
 });
 
@@ -220,9 +219,9 @@ for (let label of disabledInputsLabels) {
   label.classList.add('text-secondary');
 }
 
+// This adds the asterisks and enables/disables form questions based on user input
 collegeCheckRadioButtons.forEach((radioBtn) => {
   radioBtn.addEventListener('input', (e) => {
-    // console.log(e);
     e.preventDefault();
     if (e.target.value === 'I have attended college/trade school') {
       for (let input of disabledInputs) {
@@ -255,13 +254,4 @@ collegeCheckRadioButtons.forEach((radioBtn) => {
   });
 });
 
-// const submitButton = document.querySelector('#form-submit-button');
-//**************  sdfsdf@dfdf.com  *************
-
 const FORM = document.querySelector('form');
-
-// FORM.addEventListener('submit', (e) => {
-//   console.log(e);
-//   e.preventDefault();
-//   e.target.reset();
-// });

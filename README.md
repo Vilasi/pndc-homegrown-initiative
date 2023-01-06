@@ -48,6 +48,11 @@ Looking over everything, this has been quite the project!
 
 ## Optimizations
 
+A primary optimization on this site was the work-script.js class Iterator.
+Initially, this utilized a setTimeout method of obtaining its result. Essentially, what would happen as that for each tick of the loop, a new instance of setTimeout would be generated. Functionally, this worked at first, but the more it was tested, the more it was found to be something of a functional nightmare. Occasionally, depending on the browser (looking at you, Safari), the Iterator would mess with the Intersection Observer API and make the page unscrollable on mobile. As well, it was just generally slower.
+
+So, instead of that, it was refactored to use the setInterval method, and the logic of the loop was significantly pruned - replaced with conditionals that changed the interval value based on how close to the final value it is. This completely cleared up the scrolling problems on mobile/safari browsers, and made the animation much smoother. The client really preferred this change - as well as all test users during the testing phase of development.
+
 _(optional)_
 
 You don't have to include this section but interviewers _love_ that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
