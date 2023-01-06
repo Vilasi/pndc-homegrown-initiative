@@ -55,14 +55,11 @@ So, instead of that, it was refactored to use the setInterval method, and the lo
 
 ## Lessons Learned:
 
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those _whoa this is awesome_ or _fuck yeah I did it!_ moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+**WOW**
+
+If I'm being honest with myself, it's almost bittersweet to reach the end of this project. To pull this project off within the deadline agreed upon with the client, I had to completely immerse myself in the world of web development - in essence, learn graphic designing, layout and design patterns, Bootstrap, OOP as it applies to JS, API calls, Intersection Observer API, client relations, how to write a project proposal and contract, how to refactor and test, how to... the list goes on. If I were to compare this site to what I could build before this project, the difference would be night and day.
+I learned that what this field - the field of programming - really is is a never-ending journey of always learning. Of reading, of always writing code, of trying and failing, and of learning to be patient with myself. When the project started, I wasn't sure if I would be able to pull it off. Speaking with the client scared the hell out of me, communicating technical details seemed impossible, and imposter syndrome was at an all time high. Now, at the end of the project, I won't pretend that these things aren't still a factor to a degree, but I've learned to recontextualize them - to try despite my preoccupations, to accept that I'm not going to get everything on the first try - to learn from my mistakes while the pressure's on.
+
+This project has been a fantastic experience, and I'm forever grateful to Penn-Northwest for being so great in fostering its development. They're the best, as well as the programming community as such. I love tech, and and this project has shown beyond a shadow of a doubt that I've making the right decision by dedicating my life to it.
 
 ## Examples:
-
-Take a look at these couple examples that I have in my own portfolio:
-
-**Palettable:** https://github.com/alecortega/palettable
-
-**Twitter Battle:** https://github.com/alecortega/twitter-battle
-
-**Patch Panel:** https://github.com/alecortega/patch-panel
