@@ -53,10 +53,6 @@ Initially, this utilized a setTimeout method of obtaining its result. Essentiall
 
 So, instead of that, it was refactored to use the setInterval method, and the logic of the loop was significantly pruned - replaced with conditionals that changed the interval value based on how close to the final value it is. This completely cleared up the scrolling problems on mobile/safari browsers, and made the animation much smoother. The client really preferred this change - as well as all test users during the testing phase of development.
 
-_(optional)_
-
-You don't have to include this section but interviewers _love_ that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
-
 ## Lessons Learned:
 
 No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those _whoa this is awesome_ or _fuck yeah I did it!_ moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
