@@ -1,11 +1,12 @@
 # The Penn-Northwest Homegrown Initiative's: Homegrown Mercer County Website
 
-Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
 The Penn-Northwest Homegrown Initiative is a local nonprofit dedicated to improving the lives of people in Western Pennsylvanian community of Mercer County. This project is their website - the main functionality of which is helping people find work, homes, schools, activities, and community in the area.
 
 **Link to project:** http://www.homegrownmc.com/
 
-![Project Landing Page](https://i.imgur.com/WJWiRjX.png)
+<!-- ![Project Landing Page](https://i.imgur.com/WJWiRjX.png) -->
+
+![Project Landing Page](./images/gif/landing.gif)
 
 ## How It's Made:
 
@@ -18,8 +19,6 @@ Primarily this is a static site, composed of 6 main HTML pages, each of which se
 _Check it out!_
 ![Project Landing Page Diagonal Skew](https://i.imgur.com/4dtKHbX.png)
 ![Project Landing Page Diagonal Skew](https://i.imgur.com/K8BPdxZ.png)
-
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write _something_. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
 
 ## Optimizations
 
