@@ -266,3 +266,8 @@ footer div a:hover {
     font-size: calc(var(--header-paragraph-fs) / 1.5);
   }
 }
+
+.scrollable {
+  max-height: 35rem;
+  overflow-y: scroll;
+}
