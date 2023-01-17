@@ -1,8 +1,8 @@
 // const openJobs = document.querySelector('#open-jobs');
 // const two = document.querySelector('#two');
 // const three = document.querySelector('#three');
-const BODY = document.querySelector('body');
-const VALUES = document.querySelectorAll('.countingValues h2');
+const BODY = document.querySelector("body");
+const VALUES = document.querySelectorAll(".countingValues h2");
 // console.log(VALUES);
 // VALUES.classList.add('text-start');
 
@@ -43,76 +43,77 @@ class Iterator {
     for (let i = 0; i < reversedArray.length; i++) {
       if (iterator === 2) {
         arrayFromString.push(reversedArray[i]);
-        arrayFromString.push(',');
+        arrayFromString.push(",");
         iterator = 0;
       } else {
         arrayFromString.push(reversedArray[i]);
         iterator++;
       }
     }
-    let stringToPrint = arrayFromString.reverse().join('');
+    let stringToPrint = arrayFromString.reverse().join("");
     this.el.textContent = `${stringToPrint}`;
   };
 }
 
 const options = {
   root: null,
-  rootMargin: '0px',
+  rootMargin: "0px",
   threshold: 0.1,
 };
 
 // Make new instance of Iterator class on Intersection - making neat counting/iterating DOM effect
 if (window.innerWidth > 992) {
-  let target = document.querySelector('.countingValues');
+  let target = document.querySelector(".countingValues");
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       // Add classList to increase font-size/width
       // console.log(entry);
       const childrenCollection = entry.target.children;
       for (el of childrenCollection) {
-        el.children[0].classList.add('numericals');
+        el.children[0].classList.add("numericals");
       }
       if (entry.isIntersecting) {
         setTimeout(() => {
           // constructor(num, id, time); CONSTRUCTOR CALL FOR REFERENCE - LINE 7
           const salary = new Iterator(
             pickNumberRange(57000, 58000, 58500),
-            '#one',
+            "#one",
             0.01
           );
-          const schools = new Iterator(6, '#two', 250);
+          const schools = new Iterator(6, "#two", 250);
           const jobOpenings = new Iterator(
             pickNumberRange(2000, 3000, 2395),
-            '#three',
+            "#three",
             25
           );
         }, 250);
         // observer.unobserve(entry.target);
         observer.disconnect();
       } else {
-        const salary = new Iterator('', '#one', 0);
-        const schools = new Iterator('', '#two', 0);
-        const jobOpenings = new Iterator('', '#three', 0);
+        const salary = new Iterator("", "#one", 0);
+        const schools = new Iterator("", "#two", 0);
+        const jobOpenings = new Iterator("", "#three", 0);
       }
     });
   }, options);
   observer.observe(target);
 } else {
-  document.querySelector('#firstH2').innerHTML =
+  //MOBILE VERSION OF
+  document.querySelector("#firstH2").innerHTML =
     '<span class="text-start" id="one" style="font-size: 2.5em; display: block;">$52,569</span> Average Salary';
   // document.querySelector('#one').textContent = '52,569';
-  document.querySelector('#two').textContent = '9';
-  document.querySelector('#three').textContent = '7,895';
+  document.querySelector("#two").textContent = "6";
+  document.querySelector("#three").textContent = "2395";
   for (let h2 of VALUES) {
-    h2.classList.add('text-start');
-    h2.classList.remove('text-center');
+    h2.classList.add("text-start");
+    h2.classList.remove("text-center");
     // console.log(h2.children[0].style);
-    h2.children[0].style.fontSize = '2.5em';
-    h2.children[0].style.display = 'block';
-    h2.children[0].classList.add('text-start');
-    h2.children[0].classList.add('numericals-mobile');
-    h2.children[0].classList.remove('text-end');
-    h2.children[0].classList.remove('numericals');
+    h2.children[0].style.fontSize = "2.5em";
+    h2.children[0].style.display = "block";
+    h2.children[0].classList.add("text-start");
+    h2.children[0].classList.add("numericals-mobile");
+    h2.children[0].classList.remove("text-end");
+    h2.children[0].classList.remove("numericals");
   }
 }
 
@@ -146,51 +147,51 @@ function pickNumberRange(min, max, hardcodedValue) {
 }
 
 // Close mobile nav dropdown on scroll
-const mobileNavButton = document.querySelector('#mobile-nav-button');
-const navBarCollapseBar = document.querySelector('#navbarSupportedContent');
-window.addEventListener('scroll', (e) => {
+const mobileNavButton = document.querySelector("#mobile-nav-button");
+const navBarCollapseBar = document.querySelector("#navbarSupportedContent");
+window.addEventListener("scroll", (e) => {
   // console.log(mobileNavButton.getAttribute('aria-expanded'));
-  mobileNavButton.setAttribute('aria-expanded', 'false');
-  navBarCollapseBar.classList.remove('show');
+  mobileNavButton.setAttribute("aria-expanded", "false");
+  navBarCollapseBar.classList.remove("show");
 });
 
 // Link to College or Job sites
-const imageLinks = document.querySelector('#picture-links-section');
+const imageLinks = document.querySelector("#picture-links-section");
 const links = {
-  pennstate: 'https://shenango.psu.edu/',
-  groveCity: 'https://www.gcc.edu/',
-  thiel: 'https://www.thiel.edu/',
-  lti: 'https://www.laurel.edu/lti-hermitage',
-  westminster: 'https://www.westminster.edu/',
-  mccc: 'https://www.mercerccc.org/',
-  bccc: 'https://www.bc3.edu/',
-  indeed: 'https://www.indeed.com/jobs?q=&l=Mercer+County+PA',
+  pennstate: "https://shenango.psu.edu/",
+  groveCity: "https://www.gcc.edu/",
+  thiel: "https://www.thiel.edu/",
+  lti: "https://www.laurel.edu/lti-hermitage",
+  westminster: "https://www.westminster.edu/",
+  mccc: "https://www.mercerccc.org/",
+  bccc: "https://www.bc3.edu/",
+  indeed: "https://www.indeed.com/jobs?q=&l=Mercer+County+PA",
 };
 
 function setHref(id) {
   switch (id) {
-    case 'pennstate':
+    case "pennstate":
       window.location.href = links.pennstate;
       break;
-    case 'grove-city':
+    case "grove-city":
       window.location.href = links.groveCity;
       break;
-    case 'thiel':
+    case "thiel":
       window.location.href = links.thiel;
       break;
-    case 'LTI':
+    case "LTI":
       window.location.href = links.lti;
       break;
-    case 'westminster':
+    case "westminster":
       window.location.href = links.westminster;
       break;
-    case 'mccc':
+    case "mccc":
       window.location.href = links.mccc;
       break;
-    case 'bc3':
+    case "bc3":
       window.location.href = links.bccc;
       break;
-    case 'jobs-image':
+    case "jobs-image":
       window.location.href = links.indeed;
       break;
 
@@ -200,52 +201,52 @@ function setHref(id) {
 }
 
 // Sets an href and links to the specified url
-imageLinks.addEventListener('click', (e) => {
-  console.log('Click!!!');
+imageLinks.addEventListener("click", (e) => {
+  console.log("Click!!!");
   setHref(e.target.id);
 });
 
 const checkBoxes = document.querySelectorAll('input[type="radio"]');
-const collegeCheckRadioButtons = document.querySelectorAll('.college-check');
-const disabledInputs = document.querySelectorAll('.disabled-inputs');
+const collegeCheckRadioButtons = document.querySelectorAll(".college-check");
+const disabledInputs = document.querySelectorAll(".disabled-inputs");
 const disabledInputsLabels = document.querySelectorAll(
-  '.disabled-input-labels'
+  ".disabled-input-labels"
 );
 
 for (let input of disabledInputs) {
-  input.setAttribute('disabled', '');
+  input.setAttribute("disabled", "");
 }
 for (let label of disabledInputsLabels) {
-  label.classList.add('text-secondary');
+  label.classList.add("text-secondary");
 }
 
 // This adds the asterisks and enables/disables form questions based on user input
 collegeCheckRadioButtons.forEach((radioBtn) => {
-  radioBtn.addEventListener('input', (e) => {
+  radioBtn.addEventListener("input", (e) => {
     e.preventDefault();
-    if (e.target.value === 'I have attended college/trade school') {
+    if (e.target.value === "I have attended college/trade school") {
       for (let input of disabledInputs) {
-        input.removeAttribute('disabled');
-        input.setAttribute('required', '');
+        input.removeAttribute("disabled");
+        input.setAttribute("required", "");
       }
       for (let label of disabledInputsLabels) {
         console.log(label);
-        label.classList.remove('text-secondary');
-        const asterisk = document.createElement('span');
-        asterisk.append(' *');
-        asterisk.classList.add('asterisk', 'text-danger');
-        if (!label.classList.contains('no-star')) {
+        label.classList.remove("text-secondary");
+        const asterisk = document.createElement("span");
+        asterisk.append(" *");
+        asterisk.classList.add("asterisk", "text-danger");
+        if (!label.classList.contains("no-star")) {
           label.append(asterisk);
         }
       }
     } else {
       for (let input of disabledInputs) {
-        input.setAttribute('disabled', '');
-        input.removeAttribute('required');
+        input.setAttribute("disabled", "");
+        input.removeAttribute("required");
       }
       for (let label of disabledInputsLabels) {
-        label.classList.add('text-secondary');
-        const asterisk = document.querySelectorAll('.asterisk');
+        label.classList.add("text-secondary");
+        const asterisk = document.querySelectorAll(".asterisk");
         for (let span of asterisk) {
           span.remove();
         }
@@ -254,4 +255,4 @@ collegeCheckRadioButtons.forEach((radioBtn) => {
   });
 });
 
-const FORM = document.querySelector('form');
+const FORM = document.querySelector("form");

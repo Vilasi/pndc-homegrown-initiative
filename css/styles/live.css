@@ -100,7 +100,7 @@ header {
 }
 
 header h1,
-p {
+#header-p {
   position: relative;
   top: 1rem;
 }
