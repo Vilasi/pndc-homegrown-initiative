@@ -1,6 +1,6 @@
 :root {
-  --font-family: 'Quattrocento Sans', sans-serif;
-  --font-family-quicksand: 'Quicksand', sans-serif;
+  --font-family: "Quattrocento Sans", sans-serif;
+  --font-family-quicksand: "Quicksand", sans-serif;
 
   --vibrant-orange: #f06543;
   --soft-white: #f8f9fa;
@@ -270,4 +270,8 @@ footer div a:hover {
 .scrollable {
   max-height: 35rem;
   overflow-y: scroll;
+}
+
+.no-color {
+  color: var(--vibrant-orange);
 }

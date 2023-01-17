@@ -1,6 +1,6 @@
 :root {
-  --font-family: 'Quattrocento Sans', sans-serif;
-  --font-family-quicksand: 'Quicksand', sans-serif;
+  --font-family: "Quattrocento Sans", sans-serif;
+  --font-family-quicksand: "Quicksand", sans-serif;
 
   --vibrant-orange: #f06543;
   --footer-color-1: #51a3a3;
@@ -226,4 +226,7 @@ footer div a:hover {
   #dev-signature-div a {
     font-size: 1em;
   }
+}
+.no-blue {
+  color: var(--vibrant-orange);
 }

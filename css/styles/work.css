@@ -1,6 +1,6 @@
 :root {
-  --font-family: 'Quattrocento Sans', sans-serif;
-  --font-family-quicksand: 'Quicksand', sans-serif;
+  --font-family: "Quattrocento Sans", sans-serif;
+  --font-family-quicksand: "Quicksand", sans-serif;
 
   --vibrant-orange: #f06543;
   --soft-white: #f8f9fa;
@@ -199,7 +199,7 @@ main div h2:nth-of-type(3) {
 }
 
 .image::after {
-  content: '\A';
+  content: "\A";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -212,7 +212,7 @@ main div h2:nth-of-type(3) {
   -webkit-transition: all 0.5s;
 }
 .image:hover::after {
-  content: 'VIEW COLLEGE SITE';
+  content: "VIEW COLLEGE SITE";
   color: white;
   font-size: 2em;
   display: flex;
@@ -222,7 +222,7 @@ main div h2:nth-of-type(3) {
   opacity: 1;
 }
 #jobs-image:hover::after {
-  content: 'VIEW JOBS IN THE AREA';
+  content: "VIEW JOBS IN THE AREA";
 }
 
 section:nth-of-type(2) {
@@ -307,4 +307,8 @@ footer div a:hover {
     text-align: left;
     /* font-size: calc(var(--header-paragraph-fs) / 1.5); */
   }
+}
+
+.no-color {
+  color: var(--vibrant-orange);
 }
