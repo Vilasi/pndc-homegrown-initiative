@@ -114,8 +114,7 @@ h1.display-1 {
 main {
   background-color: var(--vibrant-orange);
   margin-top: var(--section-margin-y);
-  /* margin-bottom: var(--section-margin-y); */
-  /* height: 70vh; */
+
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -129,7 +128,6 @@ main div {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  /* flex-basis: 60ch; */
 }
 
 main div h2.display-2 {
@@ -149,13 +147,6 @@ main div h2:nth-of-type(3) {
   padding-bottom: var(--desktop-padding-t);
 }
 
-/* main div p.lead {
-  padding: var(--mobile-padding-X);
-} */
-
-/* main div h2 span {
-} */
-
 .numericals {
   display: inline-block;
   min-width: 20%;
@@ -173,11 +164,9 @@ main div h2:nth-of-type(3) {
 /* PICTURE LINKS TO JOBS/SCHOOLS */
 #picture-links-section {
   display: flex;
-  /* flex-wrap: wrap; */
 
   align-items: center;
   min-width: 100%;
-  /* border: 2px solid black; */
 }
 
 #picture-links-section div {
@@ -186,10 +175,8 @@ main div h2:nth-of-type(3) {
 
 .image {
   position: relative;
-  /* width: 400px; */
-  /* height: 400px; */
+
   width: 100%;
-  /* height: 80%; */
 }
 
 .image img {
@@ -250,37 +237,24 @@ footer div a:hover {
   top: 1px;
 }
 
-/* footer i {
-  border: 1px solid var(--soft-white);
-  border-radius: 50%;
-} */
-
-/* footer div h2 { */
-/* } */
-
 @media only screen and (max-width: 992px) {
   nav {
     font-family: var(--font-family-quicksand);
   }
-  /* header {
-    align-items: flex-start;
-  } */
+
   h1.display-1 {
     font-size: calc(var(--header-fs) / 1.5);
   }
   header p.lead {
-    /* text-align: left; */
     font-size: calc(var(--header-paragraph-fs) / 1.5);
   }
 
   #picture-links-section {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     min-width: 100%;
-    /* border: 2px solid black; */
   }
 
   #picture-links-section div {
@@ -300,12 +274,10 @@ footer div a:hover {
 @media only screen and (max-width: 575px) {
   header {
     align-items: flex-start;
-    /* background-position: 37% 45%; */
   }
 
   header p.lead {
     text-align: left;
-    /* font-size: calc(var(--header-paragraph-fs) / 1.5); */
   }
 }
 
