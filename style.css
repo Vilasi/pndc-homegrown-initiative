@@ -861,3 +861,8 @@ form div:nth-of-type(1) {
   opacity: 1;
   /* background-color: rgba(0, 0, 0, 0.5); */
 }
+
+/** Classes for JS Addition  */
+.forced-height {
+  height: 650px !important;
+}
