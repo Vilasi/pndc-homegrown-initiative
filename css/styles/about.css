@@ -1,6 +1,6 @@
 :root {
-  --font-family: "Quattrocento Sans", sans-serif;
-  --font-family-quicksand: "Quicksand", sans-serif;
+  --font-family: 'Quattrocento Sans', sans-serif;
+  --font-family-quicksand: 'Quicksand', sans-serif;
 
   --vibrant-orange: #f06543;
   --footer-color-1: #51a3a3;
@@ -126,7 +126,7 @@ h1.display-1 {
 }
 
 .vertical-rule-height {
-  height: 40rem;
+  height: 20rem;
 }
 
 .vr {

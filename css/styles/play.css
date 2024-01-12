@@ -1,6 +1,6 @@
 :root {
-  --font-family: "Quattrocento Sans", sans-serif;
-  --font-family-quicksand: "Quicksand", sans-serif;
+  --font-family: 'Quattrocento Sans', sans-serif;
+  --font-family-quicksand: 'Quicksand', sans-serif;
 
   --vibrant-orange: #f06543;
   --soft-white: #f8f9fa;
@@ -83,6 +83,10 @@ ul.navbar-nav {
   border-bottom: 1px solid var(--dark-blue);
 }
 /****************************** END NAV STYLES ******************************/
+
+.max-text-width {
+  max-width: var(--character-limit);
+}
 
 header {
   height: 90vh;
