@@ -220,6 +220,42 @@
 
     <main>
       <!-------------------------------- SECTION 1 -------------------------------->
+
+      <!--? Newsletter Subscription Form -->
+      <aside
+        id="newsletterSubscriptionAside"
+        class="d-flex justify-content-center"
+      >
+        <form
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          name="newsletter-subscription-form"
+          class="px-4 py-4 border rounded shadow"
+        >
+          <p class="d-none">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
+          <input
+            type="hidden"
+            class="w-100"
+            name="subject"
+            id="subject"
+            value="A user has signed up for the newsletter:"
+          />
+          <div class="d-flex flex-column justify-content-center mb-3">
+            <p>Enter your email to sign up for our newsletter!</p>
+            <input type="email" name="email" id="" />
+          </div>
+          <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-sm btn-primary">Submit</button>
+          </div>
+        </form>
+      </aside>
+
+      <!--? Work Hard Section -->
       <section class="container-fluid px-0 shadow-lg flexy" id="work-section">
         <div class="diagonal-box-1 bg-light">
           <div id="work-content-mobile" class="deskewed-box-work-section">

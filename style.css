@@ -126,6 +126,11 @@ header {
   top: 0.3rem;
 }
 
+#newsletterSubscriptionAside {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
 /****************************** SECTION 1 (AMENITIES) ******************************/
 section:nth-of-type(1) {
   margin-top: 6rem;
