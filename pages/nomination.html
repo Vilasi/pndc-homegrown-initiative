@@ -211,10 +211,11 @@
         <h1 class="display-2">Application</h1>
         <hr />
         <p class="lead ch-60">
-          placeholder text Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Voluptas labore, rerum quidem, voluptatem vero placeat
-          voluptatum natus provident minima veritatis dolor fugit repudiandae
-          architecto dolores quibusdam. Dolorem tempore optio voluptate!
+          In the fields below, enter the information for the person you would
+          like to nominate for the Mercer County Under 40 Distinguished Impact
+          Award. Please tell us about the work they're doing, as well as a brief
+          description of your reason for nominating them - the impact they're
+          making in our community.
         </p>
 
         <form
@@ -236,7 +237,7 @@
             value="Distinguished Impact Award Nomination Application"
           />
 
-          <div class="col-md-6">
+          <div class="col-md-4">
             <label for="firstName" class="form-label"
               >First Name <span class="text-danger">*</span></label
             >
@@ -249,7 +250,7 @@
               required
             />
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <label for="lastName" class="form-label"
               >Last Name <span class="text-danger">*</span></label
             >
@@ -259,6 +260,20 @@
               id="lastName"
               name="last-name"
               placeholder="Smith"
+              required
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="lastName" class="form-label"
+              >Age <span class="text-danger">*</span></label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="lastName"
+              name="last-name"
+              min="1"
+              max="40"
               required
             />
           </div>
@@ -289,19 +304,21 @@
 
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label"
-              >Work Information</label
+              >Work Information <span class="text-danger">*</span></label
             >
             <textarea
               class="form-control"
               id="workInformation"
               name="work-information"
               rows="3"
+              required
             ></textarea>
           </div>
 
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label"
-              >Brief Description of the Reason for Nomination</label
+              >Brief Description of the Reason for Nomination
+              <span class="text-danger">*</span></label
             >
             <textarea
               class="form-control"
