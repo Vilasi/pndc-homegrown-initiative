@@ -221,38 +221,27 @@
     <main>
       <!-------------------------------- SECTION 1 -------------------------------->
 
-      <!--? Newsletter Subscription Form -->
-      <aside
-        id="newsletterSubscriptionAside"
-        class="d-flex justify-content-center"
-      >
-        <form
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          name="newsletter-subscription-form"
-          class="px-4 py-4 border rounded shadow"
-        >
-          <p class="d-none">
-            <label>
-              Don’t fill this out if you’re human: <input name="bot-field" />
-            </label>
-          </p>
-          <input
-            type="hidden"
-            class="w-100"
-            name="subject"
-            id="subject"
-            value="A user has signed up for the newsletter:"
-          />
-          <div class="d-flex flex-column justify-content-center mb-3">
-            <p>Enter your email to sign up for our newsletter!</p>
-            <input type="email" name="email" id="" />
+      <!--? 40 Under 40 Application -->
+      <aside id="fourtyUnderFourty" class="d-flex justify-content-center">
+        <div class="card shadow-lg border border-primary">
+          <h1 class="card-header">Nominations Are Open!</h1>
+          <div class="card-body">
+            <h5 class="card-title mb-3">
+              <u>Under 40 Distinguished Impact Awards</u>
+            </h5>
+            <p class="card-text ch-60">
+              Recognizing the achievements of young leaders making significant
+              contributions in their fields.
+            </p>
+            <p class="card-text ch-60">
+              Nominate someone who has shown exceptional innovation, leadership,
+              and impact before the age of 40 in Mercer County!
+            </p>
+            <a href="./pages/nomination.html" class="btn btn-primary mb-2"
+              >Click to nominate</a
+            >
           </div>
-          <div class="d-flex justify-content-end">
-            <button type="submit" class="btn btn-sm btn-primary">Submit</button>
-          </div>
-        </form>
+        </div>
       </aside>
 
       <!--? Work Hard Section -->
@@ -268,9 +257,7 @@
               >
                 Work Hard
               </h2>
-              <p
-                class="lead work-scrollIn-class scrollIn custom-text-center ch-60"
-              >
+              <p class="lead work-scrollIn-class scrollIn custom-text-center">
                 With over 2,000 businesses in Mercer County, our expansive
                 economy spans over a range of industries. From manufacturing and
                 healthcare, to tourism and information technology, finding a
@@ -279,9 +266,7 @@
               <div class="work-scrollIn-class scrollIn marg-up">
                 <h3 class="display-4 custom-text-center">Job Search Help</h3>
               </div>
-              <p
-                class="lead work-scrollIn-class scrollIn custom-text-center ch-60"
-              >
+              <p class="lead work-scrollIn-class scrollIn custom-text-center">
                 Our job search tool helps people looking for work in the Mercer
                 County Area get connected with a job that's a perfect fit. Click
                 the button below to get started!
@@ -323,9 +308,7 @@
               >
                 Play Easy
               </h2>
-              <p
-                class="lead amenities-scrollIn scrollIn custom-text-center .ch-60"
-              >
+              <p class="lead amenities-scrollIn scrollIn custom-text-center">
                 Whether you enjoy quiet, serene outdoor adventures or an upbeat
                 night life, Mercer County has it all. Take a stroll through Buhl
                 Park, explore nearly 20 state game lands, enjoy the eclectic
@@ -338,9 +321,7 @@
                   Current Events
                 </h3>
               </div>
-              <p
-                class="lead amenities-scrollIn scrollIn custom-text-center .ch-60"
-              >
+              <p class="lead amenities-scrollIn scrollIn custom-text-center">
                 Looking for a fun event? Experience what makes Mercer County so
                 great. Check out this listing of some local community events!
               </p>
@@ -373,7 +354,7 @@
               <h2 class="display-1 live-scrollIn scrollIn custom-text-center">
                 Make A Home
               </h2>
-              <p class="lead live-scrollIn scrollIn custom-text-center .ch-60">
+              <p class="lead live-scrollIn scrollIn custom-text-center">
                 With a low cost of living, low traffic, and tightknit
                 communities, making Mercer County your home is a great choice.
                 Click the link below to compare the cost of living to your area!
@@ -383,7 +364,7 @@
                   Find Your Place
                 </h3>
               </div>
-              <p class="lead live-scrollIn scrollIn custom-text-center .ch-60">
+              <p class="lead live-scrollIn scrollIn custom-text-center">
                 Take our Neighborhood quiz and see which town is the perfect fit
                 for you!
               </p>
@@ -404,6 +385,42 @@
           </div>
         </div>
       </section>
+
+      <!--? Newsletter Subscription Form -->
+      <aside
+        id="newsletterSubscriptionAside"
+        class="d-flex justify-content-center"
+      >
+        <form
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          name="newsletter-subscription-form"
+          class="px-4 py-4 border border-primary rounded shadow"
+        >
+          <p class="d-none">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
+          <input
+            type="hidden"
+            class="w-100"
+            name="subject"
+            id="subject"
+            value="A user has signed up for the newsletter:"
+          />
+          <div class="d-flex flex-column justify-content-center mb-3">
+            <p>
+              <u>Enter your email to sign up for our newsletter!</u>
+            </p>
+            <input type="email" name="email" id="" />
+          </div>
+          <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-sm btn-primary">Submit</button>
+          </div>
+        </form>
+      </aside>
 
       <!-- Windy Road Parallax Divider -->
       <section id="windy-road" class="container-fluid px-0"></section>

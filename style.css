@@ -131,6 +131,11 @@ header {
   margin-bottom: 6rem;
 }
 
+#fourtyUnderFourty {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
 /****************************** SECTION 1 (AMENITIES) ******************************/
 section:nth-of-type(1) {
   margin-top: 6rem;
@@ -391,9 +396,9 @@ form div:nth-of-type(1) {
   color: #f8f9fa;
 }
 
-/* .ch-60 {
+.ch-60 {
   max-width: var(--60-characters);
-} */
+}
 
 /* .btn-outline */
 /*********************************** @Media Queries *************************************/

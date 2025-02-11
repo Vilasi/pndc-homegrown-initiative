@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Podcast - Homegrown Mercer County</title>
+    <title>Nomination - Homegrown Mercer County</title>
     <meta
       name="description"
       content="Helping those in Mercer County, PA, Find Work, Homes, Schools, Activities, and Community"
@@ -57,7 +57,7 @@
       rel="stylesheet"
     />
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="../css/styles/podcast.css" />
+    <link rel="stylesheet" href="../css/styles/nomination.css" />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -118,7 +118,7 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
+                href="./work.html"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -173,7 +173,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="./podcast.html">Podcast</a>
+              <a class="nav-link" href="./podcast.html">Podcast</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./about.html">About</a>
@@ -185,16 +185,18 @@
     <!------------------------------------ END NAV ------------------------------------>
     <header class="shadow-lg text-light">
       <div class="text-center container d-none d-sm-block">
-        <h1 class="display-1">Podcast</h1>
+        <h1 class="display-1">Nomination</h1>
       </div>
       <div class="container text-start d-block d-sm-none">
-        <h1 class="display-1">Podcast</h1>
+        <h1 class="display-1">Nomination</h1>
       </div>
 
       <div class="container">
         <p class="lead display-6">
-          Playbooks to Professions: Inspiring Conversations with Local Business
-          Leaders, Community Figures, and Rising Sports Talents
+          Nomination Application for the Under 40 Distinguished Impact Award
+        </p>
+        <p class="lead display-6">
+          Sponsored by Penn Northwest Development Corporation
         </p>
       </div>
     </header>
@@ -206,74 +208,120 @@
 
     <main class="">
       <section class="mb-5 container">
-        <h1 class="display-3">Episode Catalogue</h1>
+        <h1 class="display-2">Application</h1>
         <hr />
-      </section>
+        <p class="lead ch-60">
+          placeholder text Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Voluptas labore, rerum quidem, voluptatem vero placeat
+          voluptatum natus provident minima veritatis dolor fugit repudiandae
+          architecto dolores quibusdam. Dolorem tempore optio voluptate!
+        </p>
 
-      <section class="d-flex flex-wrap justify-content-center mb-5">
-        <!--* Episode 1 -------------------------------------------->
-        <div>
-          <!--? Default Screen Size -->
-          <div class="mx-3 mb-5 d-none d-sm-block">
-            <iframe
-              width="460"
-              height="315"
-              src="https://www.youtube.com/embed/Zhk3Obqtyb0?si=epvWqj6QvVotxHof"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <p>Episode 1 - Lou Brown</p>
+        <form
+          name="distinguished-impact-award-application"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="row g-3 py-5"
+        >
+          <p class="d-none">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
+          <input
+            type="hidden"
+            name="subject"
+            id="subject"
+            value="Distinguished Impact Award Nomination Application"
+          />
+
+          <div class="col-md-6">
+            <label for="firstName" class="form-label"
+              >First Name <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              name="first-name"
+              placeholder="John"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label"
+              >Last Name <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              name="last-name"
+              placeholder="Smith"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label"
+              >Email <span class="text-danger">*</span></label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="name@site.com"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phoneNumber"
+              name="phone-number"
+              pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+              placeholder="123-456-7890"
+            />
           </div>
 
-          <!--? Phone Screens -->
-          <div class="mx-3 mb-5 d-sm-none">
-            <iframe
-              width="340"
-              height="280"
-              src="https://www.youtube.com/embed/Zhk3Obqtyb0?si=epvWqj6QvVotxHof"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <p>Episode 1 - Lou Brown</p>
-          </div>
-        </div>
-        <!--* END Episode 1 -------------------------------------------->
-
-        <!--* Episode 2 -------------------------------------------->
-        <div>
-          <!--? Default Screen Size -->
-          <div class="mx-3 mb-5 d-none d-sm-block">
-            <iframe
-              width="460"
-              height="315"
-              src="https://www.youtube.com/embed/GbELnNf7NIs?si=WeRFF9vFoEBrXRjm"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <p>Episode 2 - Kolten Hoffman</p>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Work Information</label
+            >
+            <textarea
+              class="form-control"
+              id="workInformation"
+              name="work-information"
+              rows="3"
+            ></textarea>
           </div>
 
-          <!--? Phone Screens -->
-          <div class="mx-3 mb-5 d-sm-none">
-            <iframe
-              width="340"
-              height="280"
-              src="https://www.youtube.com/embed/GbELnNf7NIs?si=WeRFF9vFoEBrXRjm"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <p>Episode 2 - Kolten Hoffman</p>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Brief Description of the Reason for Nomination</label
+            >
+            <textarea
+              class="form-control"
+              id="nominationReason"
+              name="nomination-reason"
+              rows="3"
+              required
+            ></textarea>
           </div>
-        </div>
-        <!--* Episode 2 -------------------------------------------->
+
+          <div class="col-12">
+            <button
+              id="form-submit-button"
+              type="submit"
+              class="btn btn-primary btn-lg"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
       </section>
     </main>
 
