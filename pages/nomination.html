@@ -193,7 +193,8 @@
 
       <div class="container">
         <p class="lead display-6">
-          Nomination Application for the Under 40 Distinguished Impact Award
+          Nomination Application for Phase I of the Under 40 Distinguished
+          Impact Award
         </p>
         <p class="lead display-6">
           Sponsored by Penn Northwest Development Corporation
@@ -212,10 +213,21 @@
         <hr />
         <p class="lead ch-60">
           In the fields below, enter the information for the person you would
-          like to nominate for the Mercer County Under 40 Distinguished Impact
-          Award. Please tell us about the work they're doing, as well as a brief
-          description of your reason for nominating them - the impact they're
-          making in our community.
+          like to nominate for Phase I the Mercer County Under 40 Distinguished
+          Impact Award. Please tell us about the work they're doing, as well as
+          a brief description of your reason for nominating them - the impact
+          they're making in our community.
+        </p>
+        <p class="lead ch-60">
+          This nomination is for Phase I of the award ceremony. In Phase II,
+          nominated candidates have a chance to move forward, with the winner
+          being ultimately chosen by a previous year's nominated candidate who
+          is a member of the Future Leaders Committee of the Homegrown
+          Initiative in a blackout vote.
+        </p>
+        <p class="lead ch-60">
+          The number of entries per candidate does not affect nomination
+          consideration.
         </p>
 
         <form
@@ -302,21 +314,50 @@
             />
           </div>
 
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"
-              >Work Information <span class="text-danger">*</span></label
+          <div class="col-md-6">
+            <label for="workplace" class="form-label"
+              >Workplace <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="workplace"
+              name="workplace"
+              placeholder="Company/Organization"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="title" class="form-label"
+              >Professional Title <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              name="title"
+              placeholder="Title"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="communityProfessionalAffiliations" class="form-label"
+              >Community Professional Affiliations
+              <span class="text-danger">*</span></label
             >
             <textarea
               class="form-control"
-              id="workInformation"
-              name="work-information"
+              id="communityProfessionalAffiliations"
+              name="community-professional-affiliations"
+              placeholder="E.g. Clubs, Boards, Committees, Coaching, etc."
               rows="3"
               required
             ></textarea>
           </div>
 
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"
+          <div>
+            <label for="nominationReason" class="form-label"
               >Brief Description of the Reason for Nomination
               <span class="text-danger">*</span></label
             >
@@ -324,9 +365,50 @@
               class="form-control"
               id="nominationReason"
               name="nomination-reason"
+              placeholder="Please give a brief description on community and/or work accomplishments of nominee. Max characters 800"
               rows="3"
+              maxlength="800"
               required
             ></textarea>
+          </div>
+          <div class="col-md-4">
+            <label for="nominatorName" class="form-label"
+              >Nominator's Name <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="nominatorName"
+              name="nominator-name"
+              placeholder="Jane Doe"
+              required
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="nominatorEmail" class="form-label"
+              >Nominator's Email <span class="text-danger">*</span></label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="nominatorEmail"
+              name="nominator-email"
+              placeholder="name@site.com"
+              required
+            />
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="nominatorPhoneNumber" class="form-label"
+              >Nominator's Phone Number</label
+            >
+            <input
+              type="tel"
+              class="form-control"
+              id="nominatorPhoneNumber"
+              name="nominator-phone-number"
+              pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+              placeholder="123-456-7890"
+            />
           </div>
 
           <div class="col-12">
